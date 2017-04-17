@@ -29,7 +29,7 @@ handlers.DailyRewards_DailyCheck = function (args)
     var update = server.SetTitleInternalData(
                                 {
                                   "Key": "DailyRewards"  ,
-                                  "Value" :  DailyRewards_Data 
+                                  "Value" :  DailyRewards_Data.DayCounter 
 	                            }
                               );
 
