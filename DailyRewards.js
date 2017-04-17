@@ -7,7 +7,8 @@ var DailyRewards_TitleData =
 };
 
 
-
+//-- Called automatically from Task once a day. 
+//-- This moves the daily rewards counter for all the players to check
 handlers.DailyRewards_DailyCheck = function (args)
 {
 
@@ -21,6 +22,13 @@ handlers.DailyRewards_DailyCheck = function (args)
    DailyRewards_Data.DayCounter ++;
    var nowDate = Date.now();
    DailyRewards_Data.LastCheckTime = nowDate;
+
+
+   server.SetTitleInternalData(
+                                {
+                        	    	"Keys": "DailyRewards" ,
+                                    "Value" : DailyRewards_Data
+	                            });
 
    return "OK";
 
