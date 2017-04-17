@@ -13,6 +13,18 @@ handlers.SetClickersData = function( args )
 
     var ClickersData_New = {};
 
+    var dataRequest = server.GetUserInternalData
+                      ({
+                            PlayFabId : currentPlayerId, 
+                            Keys : ["SavedClickers"]
+                      });
+
+    //--- If Saved Data, overwritte it
+    if(dataRequest.Data.hasOwnProperty("SavedClickers"))
+    {
+        ClickersData_New = JSON.parse(dataRequest.Data["SavedClickers"].Value) ;
+    }
+
     var ExplodedValues = data.split("#");
 
     
