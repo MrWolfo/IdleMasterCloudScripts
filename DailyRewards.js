@@ -26,8 +26,7 @@ handlers.DailyRewards_DailyCheck = function (args)
 
    server.SetTitleInternalData(
                                 {
-                        	    	"Keys": "DailyRewards" ,
-                                    "Value" : DailyRewards_Data
+                                    "Data":  {"DailyRewards" : DailyRewards_Data}
 	                            });
 
    return "OK";
