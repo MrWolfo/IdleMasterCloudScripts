@@ -71,9 +71,12 @@ handlers.GetClickersData = function( args )
         return "NODATA";
     }
 
-    //--- 
+    var ClickerData_Saved = JSON.parse( dataRequest.Data["SavedClickers"] );
 
-    return "LADATALOCA";
+
+
+
+    return ClickerData_Saved["Cat"];
 }
 
 
