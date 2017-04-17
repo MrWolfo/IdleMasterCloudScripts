@@ -17,7 +17,7 @@ handlers.DailyRewards_DailyCheck = function (args)
                         	    	"Keys": [ "DailyRewards" ]
 	                            });
 
-   var DailyRewards_Data = GetTitleDataResult.Data;
+   var DailyRewards_Data =  JSON.parse( GetTitleDataResult.Data);
 
    DailyRewards_Data.DayCounter ++;
    var nowDate = Date.now();
@@ -27,7 +27,7 @@ handlers.DailyRewards_DailyCheck = function (args)
     var update = server.SetTitleInternalData(
                                 {
                                   "Key": "DailyRewards"  ,
-                                  "Value" : DailyRewards_Data
+                                  "Value" : JSON.stringify( DailyRewards_Data )
 	                            }
                               );
 
