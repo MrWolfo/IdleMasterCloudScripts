@@ -11,11 +11,18 @@ handlers.SetClickersData = function( args )
     // the formatted string with clickers data
     var data = args["data"];
 
-    var ClickersData = {};
+    var ClickersData_New = {};
 
     var ExplodedValues = data.split("#");
 
-    return ExplodedValues[0];
+    var pepe = 0;
+    for each (var clickerString in ExplodedValues)
+    {
+            pepe ++;
+
+    }
+
+    return pepe;
 
 }
 
