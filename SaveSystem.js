@@ -5,34 +5,18 @@
 ***********                                                                     ***********
 */
 
-/**
- *  Get User Internal Data Wrapper for Given User  
- *  Data will be stored in a Key call GenericData as Json
- * 
- *  return a Parsed Object from stored JSON
- */
-function GetGenericPlayerData( playfabUserId )
+
+handlers.SetClickersData = function( args )
 {
-    var dataRequest = server.GetUserInternalData(
-                {
-                            PlayFabId : playfabUserId,
-                            Keys : ["GenericData"]
-                  }
+    // the formatted string with clickers data
+    var data = args["data"];
 
-    );
+    var ClickersData = {};
 
-    
-    if( !dataRequest.Data.hasOwnProperty("GenericData"))
-    {
-       ResetVolatileData();
-       dataRequest = server.GetUserInternalData({
-                            PlayFabId : playfabUserId,
-                            Keys : ["GenericData"]
-                        });
-       
-    }
+    var ExplodedValues = data.split("#");
 
-    return JSON.parse( dataRequest.Data["GenericData"].Value ); 
+    return ExplodedValues[0];
+
 }
 
 
