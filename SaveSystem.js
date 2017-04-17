@@ -15,14 +15,42 @@ handlers.SetClickersData = function( args )
 
     var ExplodedValues = data.split("#");
 
-    var pepe = 0;
+    
     for (var clickerString of ExplodedValues)
     {
-            pepe ++;
+        var ClickerExploded = clickerString.split('&');
 
+        var Clicker_ID    = ClickerExploded[0];
+        var Clicker_Level = ClickerExploded[1];
+        var Clicker_BoostsDone   = ClickerExploded[2];
+        var Clicker_IsAscended   = ClickerExploded[3];
+        var Clicker_SkillLevel   = ClickerExploded[4];
+        var Clicker_MinionsLevel = ClickerExploded[5];
+        var Clicker_Multipliers  = ClickerExploded[6];
+        
+        var Clicker_JSON = 
+        {
+             "Level"        : Clicker_Level,
+             "Boosts"       : Clicker_BoostsDone,
+             "IsAscended"   : Clicker_IsAscended,
+             "SkillLevel"   : Clicker_SkillLevel,
+             "MinionsLevel" : Clicker_MinionsLevel,
+             "Multipliers"  : Clicker_Multipliers
+        };
+
+        ClickersData_New[Clicker_ID]  = Clicker_JSON;   
     }
 
-    return pepe;
+    var save = server.UpdateUserInternalData(
+           {
+                PlayFabId : currentPlayerId,
+                Data : {"ClickersOP" :  JSON.stringify( ClickersData_New ) } 
+            } 
+    );
+
+
+
+    return "OK";
 
 }
 
