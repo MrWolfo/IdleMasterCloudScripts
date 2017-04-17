@@ -57,15 +57,16 @@ handlers.SetClickersData = function( args )
 
 handlers.GetClickersData = function( args )
 {
-     return "adsfasdfasdfasd";
+     
 
      var dataRequest = server.GetUserInternalData
                       ({
-                            PlayFabId : currentPlayerId, Keys : ["SavedClickers"]
+                            PlayFabId : currentPlayerId, 
+                            Keys : ["SavedClickers"]
                       });
 
     //--- If no saved data for this, will ask to client for saving the empty/default data 
-    if(! dataRequest.Data.hasOwnProperty(SavedClickers))
+    if(! dataRequest.Data.hasOwnProperty("SavedClickers"))
     {
         return "NODATA";
     }
