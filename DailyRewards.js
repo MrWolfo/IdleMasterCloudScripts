@@ -17,7 +17,7 @@ handlers.DailyRewards_DailyCheck = function (args)
                         	    	"Keys": [ "DailyRewards" ]
 	                            });
 
-   var DailyRewards_Data =   GetTitleDataResult.Data[ "DailyRewards" ];
+   var DailyRewards_Data =  JSON.parse( GetTitleDataResult.Data[ "DailyRewards" ] );
 
    log.debug(DailyRewards_Data);
 
