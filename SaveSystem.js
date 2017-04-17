@@ -73,10 +73,23 @@ handlers.GetClickersData = function( args )
 
     var ClickerData_Saved = JSON.parse(dataRequest.Data["SavedClickers"].Value) ;
 
+    var formattedString = "";
 
+    for(var aKey of Object.keys( ClickerData_Saved) )
+    {
+        var clicker = ClickerData_Saved[aKey];
+        
+        formattedString += aKey + "&";
+        formattedString += clicker.Level + "&";
+        formattedString += clicker.Boosts + "&";
+        formattedString += clicker.IsAscended + "&";
+        formattedString += clicker.SkillLevel + "&";
+        formattedString += clicker.MinionsLevel + "&";
+        formattedString += clicker.Multipliers + "#";
+    }
+    formattedString = formattedString.substring(0,formattedString.length-1);
 
-
-    return ClickerData_Saved["Cat"];
+    return formattedString;
 }
 
 
