@@ -49,7 +49,7 @@ handlers.CollectDailyReward = function (args)
 
 
 
-handlers.CheckDailyRewards = function (args)
+handlers.DailyRewards_DailyCheck = function (args)
 {
 
 
