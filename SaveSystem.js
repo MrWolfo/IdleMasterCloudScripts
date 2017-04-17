@@ -16,7 +16,7 @@ handlers.SetClickersData = function( args )
     var ExplodedValues = data.split("#");
 
     var pepe = 0;
-    for each (var clickerString in ExplodedValues)
+    for (var clickerString of ExplodedValues)
     {
             pepe ++;
 
