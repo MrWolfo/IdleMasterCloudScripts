@@ -76,7 +76,7 @@ handlers.GetClickersData = function( args )
 
 
 
-    return ClickerData_Saved["Cat"];
+    return ClickerData_Saved;
 }
 
 
