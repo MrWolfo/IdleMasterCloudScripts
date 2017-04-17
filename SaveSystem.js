@@ -70,7 +70,7 @@ handlers.GetClickersData = function( args )
 
     //--- 
 
-
+    return "LADATALOCA";
 }
 
 
