@@ -24,10 +24,12 @@ handlers.DailyRewards_DailyCheck = function (args)
    DailyRewards_Data.LastCheckTime = nowDate;
 
 
-   server.SetTitleInternalData(
+    var update = server.SetTitleInternalData(
                                 {
-                                    "Data":  {"DailyRewards" : DailyRewards_Data}
-	                            });
+                                  "Key": "DailyRewards"  ,
+                                  "Value" : "DailyRewards_Data"
+	                            }
+                              );
 
    return "OK";
 
