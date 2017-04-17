@@ -44,7 +44,7 @@ handlers.SetClickersData = function( args )
     var save = server.UpdateUserInternalData(
            {
                 PlayFabId : currentPlayerId,
-                Data : {"ClickersOP" :  JSON.stringify( ClickersData_New ) } 
+                Data : {"SavedClickers" :  JSON.stringify( ClickersData_New ) } 
             } 
     );
 
@@ -53,6 +53,26 @@ handlers.SetClickersData = function( args )
     return "OK";
 
 }
+
+
+handlers.GetClickersData = function( args )
+{
+     var dataRequest = server.GetUserInternalData
+                      ({
+                            PlayFabId : currentPlayerId, Keys : ["SavedClickers"]
+                      });
+
+    //--- If no saved data for this, will ask to client for saving the empty/default data 
+    if(! dataRequest.Data.hasOwnProperty(SavedClickers))
+    {
+        return "NODATA";
+    }
+
+    //--- 
+
+
+}
+
 
 
 /**
