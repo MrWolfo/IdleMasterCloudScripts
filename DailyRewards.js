@@ -27,7 +27,7 @@ handlers.DailyRewards_DailyCheck = function (args)
     var update = server.SetTitleInternalData(
                                 {
                                   "Key": "DailyRewards"  ,
-                                  "Value" : DailyRewards_Data 
+                                  "Value" : JSON.stringify( DailyRewards_Data )
 	                            }
                               );
 
