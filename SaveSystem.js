@@ -57,6 +57,8 @@ handlers.SetClickersData = function( args )
 
 handlers.GetClickersData = function( args )
 {
+     return "adsfasdfasdfasd";
+
      var dataRequest = server.GetUserInternalData
                       ({
                             PlayFabId : currentPlayerId, Keys : ["SavedClickers"]
