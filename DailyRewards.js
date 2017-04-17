@@ -11,12 +11,14 @@ var DailyRewards_TitleData =
 handlers.DailyRewards_DailyCheck = function (args)
 {
 
-    var GetTitleDataResult = server.GetTitleData(
+    var GetTitleDataResult = server.GetTitleInternalData(
                                 {
                         	    	"Keys": [ "DailyRewards" ]
 	                            });
 
-   log.debug(GetTitleDataResult);
+   var DailyRewards_Data = GetTitleDataResult.Data;
+
+   log.debug(DailyRewards_Data);
 
    return;
    var playerData = server.GetUserInternalData(
