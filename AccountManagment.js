@@ -300,7 +300,7 @@ handlers.ReLoggedEvent = function (args)
 
 handlers.ResetPlayerData = function (args)
 {
-    var updateUserInternalDataResult = server.UpdateUserData(
+    var updateUserDataResult = server.UpdateUserData(
             {
                 PlayFabId : currentPlayerId,
                 Data : {
@@ -311,6 +311,14 @@ handlers.ResetPlayerData = function (args)
                     "RewardsManager" :  null,
                     "TapManager" :  null,
                     "TrainingLevel" :  null
+             } 
+            });
+
+     var updateUserInternalDataResult = server.UpdateUserInternalData(
+            {
+                PlayFabId : currentPlayerId,
+                Data : {
+                    "SavedClickers" :  null
              } 
             });
 }
