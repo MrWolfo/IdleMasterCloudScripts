@@ -296,3 +296,21 @@ handlers.ReLoggedEvent = function (args)
                 Data : {"GenericData" :  JSON.stringify( CurrentData ) } 
             });
 }
+
+
+handlers.ResetPlayerData = function (args)
+{
+    var updateUserInternalDataResult = server.UpdateUserData(
+            {
+                PlayFabId : currentPlayerId,
+                Data : {
+                    "FragmentMinions" :  null,
+                    "GameLogic" :  null,
+                    "MoneyManager" :  null,
+                    "PowerCards" :  null,
+                    "RewardsManager" :  null,
+                    "TapManager" :  null,
+                    "TrainingLevel" :  null
+             } 
+            });
+}
