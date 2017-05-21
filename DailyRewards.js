@@ -39,7 +39,7 @@ handlers.DailyRewards_DailyCheck = function (args)
 
 ///---------- CALLED BY CLIENTS -----------------
 
-handlers.DailyRewards_GetMyInfo - function (args)
+handlers.DailyRewards_GetMyInfo = function (args)
 {
     var playerData = server.GetUserInternalData(
         {
