@@ -78,7 +78,8 @@ handlers.DailyRewards_GetMyInfo = function (args)
     var returnData = {
         "GC" : DailyRewards_Data.DayCounter,
         "PC" : Player_DailyRewards_Data.LastDayCollected,
-        "SC" : Player_DailyRewards_Data.StreakCounter
+        "SC" : Player_DailyRewards_Data.StreakCounter,
+        "T"  : DailyRewards_Data.LastCheckTime
     };
 
     return {   data : returnData };
