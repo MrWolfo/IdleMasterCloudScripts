@@ -41,6 +41,16 @@ handlers.DailyRewards_DailyCheck = function (args)
 
 handlers.DailyRewards_GetMyInfo = function (args)
 {
+    //--- global server data 
+    var GetTitleDataResult = server.GetTitleInternalData( 
+                                {
+                        	    	"Keys": [ "DailyRewards" ]
+	                            });
+
+    var DailyRewards_Data =  JSON.parse( GetTitleDataResult.Data[ "DailyRewards" ] );
+
+
+    //--- Player Data 
     var dataRequest = server.GetUserInternalData(
         {
             PlayFabId : currentPlayerId,
@@ -48,18 +58,24 @@ handlers.DailyRewards_GetMyInfo = function (args)
         }
     );
 
-    var Player_DailyRewards_Data = {};
+    var Player_DailyRewards_Data = 
+    {
+        "LastDayCollected" : 0,
+        "StreakCounter"    : 0
+    };
     
     if(dataRequest.Data.hasOwnProperty("DailyReward"))
     {
-        
         Player_DailyRewards_Data = JSON.parse(dataRequest.Data["DailyReward"].Value) ;
-        
     }
 
+    var returnData = {
+        "GC" : DailyRewards_Data.DayCounter,
+        "PC" : Player_DailyRewards_Data.LastDayCollected,
+        "SC" : StreakCounter
+    };
 
-
-    return {   data : Player_DailyRewards_Data };
+    return {   data : returnData };
 }
 
 
