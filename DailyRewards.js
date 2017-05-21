@@ -129,6 +129,11 @@ handlers.CollectDailyReward = function (args)
         Player_DailyRewards_Data.StreakCounter = 0;
     }
 
+    //-- Reset Streak if already did all the possible days
+    if(Player_DailyRewards_Data.StreakCounter >= 14)
+        Player_DailyRewards_Data.StreakCounter = 0;
+
+
     Player_DailyRewards_Data.StreakCounter++;
     Player_DailyRewards_Data.LastDayCollected = DailyRewards_Data.DayCounter;
 
