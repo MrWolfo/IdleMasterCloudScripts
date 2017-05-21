@@ -6,6 +6,8 @@ var DailyRewards_TitleData =
     "LastCheckTime" : 0
 };
 
+var ONE_DAY = 1000 * 60 * 60 * 24;
+
 
 //----------- ONLY CALLED BY TASK IN SERVER -------------
 //-- Called automatically from Task once a day. 
@@ -75,11 +77,15 @@ handlers.DailyRewards_GetMyInfo = function (args)
         Player_DailyRewards_Data.StreakCounter = 0;
     }
 
+    var TimeSinceLastCheck = DailyRewards_Data.LastCheckTime - Date.now();
+    var TimeToNextCheck    =  DailyRewards_Data.LastCheckTime + ONE_DAY - TimeSinceLastCheck;
+
     var returnData = {
         "GC" : DailyRewards_Data.DayCounter,
         "PC" : Player_DailyRewards_Data.LastDayCollected,
         "SC" : Player_DailyRewards_Data.StreakCounter,
-        "T"  : DailyRewards_Data.LastCheckTime
+        "T0"  : TimeSinceLastCheck,
+        "T1"  : TimeToNextCheck
     };
 
     return {   data : returnData };
