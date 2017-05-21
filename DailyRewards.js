@@ -75,14 +75,14 @@ handlers.DailyRewards_GetMyInfo = function (args)
     if(Player_DailyRewards_Data.DayCounter - Player_DailyRewards_Data.DailyRewardLastTime > 1)
     {
         Player_DailyRewards_Data.StreakCounter = 0;
+    }
 
-         var save = server.UpdateUserInternalData(
+    var save = server.UpdateUserInternalData(
            {
                 PlayFabId : currentPlayerId,
                 Data : {"DailyReward" :  JSON.stringify( Player_DailyRewards_Data ) } 
            } 
         );
-    }
 
     var TimeSinceLastCheck = Date.now() - DailyRewards_Data.LastCheckTime;
     var TimeToNextCheck    = DailyRewards_Data.LastCheckTime + ONE_DAY - TimeSinceLastCheck;
