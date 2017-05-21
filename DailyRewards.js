@@ -72,7 +72,7 @@ handlers.DailyRewards_GetMyInfo = function (args)
     }
 
     //-- Reset the player collect streak if player missed one day
-    if(Player_DailyRewards_Data.DayCounter - Player_DailyRewards_Data.DailyRewardLastTime > 1)
+    if(Player_DailyRewards_Data.DayCounter - Player_DailyRewards_Data.LastDayCollected > 1)
     {
         Player_DailyRewards_Data.StreakCounter = 0;
     }
