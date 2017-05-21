@@ -77,8 +77,8 @@ handlers.DailyRewards_GetMyInfo = function (args)
         Player_DailyRewards_Data.StreakCounter = 0;
     }
 
-    var TimeSinceLastCheck = DailyRewards_Data.LastCheckTime - Date.now();
-    var TimeToNextCheck    =  DailyRewards_Data.LastCheckTime + ONE_DAY - TimeSinceLastCheck;
+    var TimeSinceLastCheck = Date.now() - DailyRewards_Data.LastCheckTime;
+    var TimeToNextCheck    = DailyRewards_Data.LastCheckTime + ONE_DAY - TimeSinceLastCheck;
 
     var returnData = {
         "GC" : DailyRewards_Data.DayCounter,
