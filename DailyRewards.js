@@ -130,7 +130,7 @@ handlers.CollectDailyReward = function (args)
     }
 
     Player_DailyRewards_Data.StreakCounter++;
-    Player_DailyRewards_Data.LastDayCollected = Player_DailyRewards_Data.DayCounter;
+    Player_DailyRewards_Data.LastDayCollected = DailyRewards_Data.DayCounter;
 
     var save = server.UpdateUserInternalData(
            {
