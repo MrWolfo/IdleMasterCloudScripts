@@ -69,10 +69,16 @@ handlers.DailyRewards_GetMyInfo = function (args)
         Player_DailyRewards_Data = JSON.parse(dataRequest.Data["DailyReward"].Value) ;
     }
 
+    //-- Reset the player collect streak if player missed one day
+    if(Player_DailyRewards_Data.DayCounter - Player_DailyRewards_Data.DailyRewardLastTime > 1)
+    {
+        Player_DailyRewards_Data.StreakCounter = 0;
+    }
+
     var returnData = {
         "GC" : DailyRewards_Data.DayCounter,
         "PC" : Player_DailyRewards_Data.LastDayCollected,
-        "SC" : StreakCounter
+        "SC" : Player_DailyRewards_Data.StreakCounter
     };
 
     return {   data : returnData };
