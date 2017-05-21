@@ -41,7 +41,7 @@ handlers.DailyRewards_DailyCheck = function (args)
 
 handlers.DailyRewards_GetMyInfo = function (args)
 {
-    var playerData = server.GetUserInternalData(
+    var dataRequest = server.GetUserInternalData(
         {
             PlayFabId : currentPlayerId,
             Keys : ["DailyReward"]
