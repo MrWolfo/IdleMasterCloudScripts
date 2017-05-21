@@ -94,46 +94,10 @@ handlers.DailyRewards_GetMyInfo = function (args)
 
 handlers.CollectDailyReward = function (args)
 {
-     var playerData = server.GetUserInternalData(
-     {
-         PlayFabId : currentPlayerId,
-         Keys : ["DailyRewardLastTime","LoginTimes","RewardNumberOnCalendar"]
-     }
-      );
+     
 
 
-    var LastTimeDailyReward = Date.now();
-    var RewardNumberOnCalendar = playerData.Data["RewardNumberOnCalendar"].Value;
-
-    RewardNumberOnCalendar ++;
-
-    var ReturnData =
-    {
-        "RewardNumberOnCalendar" : RewardNumberOnCalendar - 1,
-        "Status" : "OK"
-    };
-
-
-    if(RewardNumberOnCalendar >= TOTAL_NUMBER_REWARD_DAYS)
-        RewardNumberOnCalendar=0;
-
-    var updateUserInternalDataResult = server.UpdateUserInternalData(
-     {
-     	PlayFabId : currentPlayerId,
-        Data :
-           {
-             "DailyRewardLastTime" : LastTimeDailyReward ,
-             "RewardNumberOnCalendar" :RewardNumberOnCalendar
-
-           }
-
-
-     }
-
-   );
-
-
-    return {  messageValue : "OK" , data : ReturnData };
+    return {  data : ReturnData };
 
 
 }
