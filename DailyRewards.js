@@ -84,8 +84,8 @@ handlers.DailyRewards_GetMyInfo = function (args)
         "GC" : DailyRewards_Data.DayCounter,
         "PC" : Player_DailyRewards_Data.LastDayCollected,
         "SC" : Player_DailyRewards_Data.StreakCounter,
-        "T0"  : TimeSinceLastCheck,
-        "T1"  : TimeToNextCheck
+        "T0"  : TimeSinceLastCheck / 1000,
+        "T1"  : TimeToNextCheck / 1000
     };
 
     return {   data : returnData };
