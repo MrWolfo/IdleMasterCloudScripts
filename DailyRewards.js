@@ -7,6 +7,7 @@ var DailyRewards_TitleData =
 };
 
 
+//----------- ONLY CALLED BY TASK IN SERVER -------------
 //-- Called automatically from Task once a day. 
 //-- This moves the daily rewards counter for all the players to check
 handlers.DailyRewards_DailyCheck = function (args)
@@ -33,6 +34,32 @@ handlers.DailyRewards_DailyCheck = function (args)
 
    return "OK";
 
+}
+
+
+///---------- CALLED BY CLIENTS -----------------
+
+handlers.DailyRewards_GetMyInfo - function (args)
+{
+    var playerData = server.GetUserInternalData(
+        {
+            PlayFabId : currentPlayerId,
+            Keys : ["DailyReward"]
+        }
+    );
+
+    var Player_DailyRewards_Data = {};
+    
+    if(dataRequest.Data.hasOwnProperty("DailyReward"))
+    {
+        
+        Player_DailyRewards_Data = JSON.parse(dataRequest.Data["DailyReward"].Value) ;
+        
+    }
+
+
+
+    return {   data : Player_DailyRewards_Data };
 }
 
 
