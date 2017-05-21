@@ -95,7 +95,54 @@ handlers.DailyRewards_GetMyInfo = function (args)
 handlers.CollectDailyReward = function (args)
 {
      
+    //--- global server data 
+    var GetTitleDataResult = server.GetTitleInternalData( 
+                                {
+                        	    	"Keys": [ "DailyRewards" ]
+	                            });
 
+    var DailyRewards_Data =  JSON.parse( GetTitleDataResult.Data[ "DailyRewards" ] );
+
+
+    //--- Player Data 
+    var dataRequest = server.GetUserInternalData(
+        {
+            PlayFabId : currentPlayerId,
+            Keys : ["DailyReward"]
+        }
+    );
+
+    var Player_DailyRewards_Data = 
+    {
+        "LastDayCollected" : 0,
+        "StreakCounter"    : 0
+    };
+    
+    if(dataRequest.Data.hasOwnProperty("DailyReward"))
+    {
+        Player_DailyRewards_Data = JSON.parse(dataRequest.Data["DailyReward"].Value) ;
+    }
+
+    //-- Reset the player collect streak if player missed one day
+    if(Player_DailyRewards_Data.DayCounter - Player_DailyRewards_Data.DailyRewardLastTime > 1)
+    {
+        Player_DailyRewards_Data.StreakCounter = 0;
+    }
+
+    Player_DailyRewards_Data.StreakCounter++;
+    Player_DailyRewards_Data.LastDayCollected = Player_DailyRewards_Data.DayCounter;
+
+    var save = server.UpdateUserInternalData(
+           {
+                PlayFabId : currentPlayerId,
+                Data : {"DailyReward" :  JSON.stringify( Player_DailyRewards_Data ) } 
+            } 
+    );
+
+    var ReturnData = 
+    {
+        "SC" : Player_DailyRewards_Data.StreakCounter
+    };
 
     return {  data : ReturnData };
 
