@@ -232,9 +232,8 @@ var CLICKERS_CONFIG =
  handlers.ClickersConfig = function (args)
 {
    
-
-   
-    //var returnData = JSON.stringify( CLICKERS_CONFIG);
+    var returnData = {};
+    returnData["clickers"] = JSON.stringify( CLICKERS_CONFIG.clickers);
 
     return CLICKERS_CONFIG;
 }
