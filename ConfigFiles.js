@@ -235,5 +235,5 @@ var CLICKERS_CONFIG =
     var returnData = {};
     returnData["clickers"] = JSON.stringify( CLICKERS_CONFIG.clickers);
 
-    return CLICKERS_CONFIG;
+    return returnData;
 }
