@@ -1,0 +1,236 @@
+var TYPE_CASUAL   = 1;
+var TYPE_HARDCORE = 2;
+var TYPE_MIXED    = 3;
+
+var CLICKERS_CONFIG = 	
+{
+    "version" : 0,
+    "clickers" :
+    [
+        {
+        "Id": 1,
+        "Name": "KittiesClicker",
+        "AvatarImage": "Cat",
+        "Class": TYPE_CASUAL,
+        "BaseCost": 500,
+        "Speed": 10,
+        "Color": "1D53A4",
+        "Info": "Feed them all!",
+        "SkillName": "Fortune Cat",
+        "SkillInfo": "Fortune Cat will pop in periodically.*Tap it and the Cat will help you doing autotaps.*More Kitties Clicker upgrades you have, more duration of the effect."
+        },
+        {
+        "Id": 2,
+        "Name": "PieClicker",
+        "AvatarImage": "Bakery",
+        "Class": TYPE_CASUAL,
+        "BaseCost": 1300,
+        "Speed": 1.2,
+        "Color": "E03B5A",
+        "Info": "Pie Tower of Infinite Floors.*One tap, one Sugar grain.",
+        "SkillName": "Power CupCake",
+        "SkillInfo": "A Power CupCake will appear in screen periodically.*Tap it to Multiply your Profits during a couple of secs.*More Pie Clicker upgrades you have, more duration of the effect."
+        },
+        {
+        "Id": 3,
+        "Name": "FantasyClickTap",
+        "AvatarImage": "Fantasy",
+        "Class": TYPE_HARDCORE,
+        "BaseCost": 17000,
+        "Speed": 1.2,
+        "Color": "5E52A2",
+        "Info": "Magic, Dragons, Swords and Dungeons without Limit.",
+        "SkillName": "Kitty Ranger",
+        "SkillInfo": "Party Teams are a must in Fantasy Worlds.*Now a Kitty Ranger appears each time you tap FortuneCat, adding more taps! Kitty Ranger is more powerful with each boost you did on FantasyClickTap"
+        },
+        {
+        "Id": 4,
+        "Name": "CaffeineClicker",
+        "AvatarImage": "Caffeine",
+        "Class": TYPE_CASUAL,
+        "BaseCost": 87000,
+        "Speed": 1.2,
+        "Color": "00B6E1",
+        "Info": "Sleep if for the weaks",
+        "SkillName": "Flavor Hesitation",
+        "SkillInfo": "A Coffee Card will pop in periodically.*Tap it to select between 3 hidden Coffee Card Flavors.*Each Flavor will accelerate the time for a given duration."
+        },
+        {
+        "Id": 5,
+        "Name": "Zombie Waves",
+        "AvatarImage": "Zombie",
+        "Class": TYPE_HARDCORE,
+        "BaseCost": 530000,
+        "Speed": 1.2,
+        "Color": "CD2026",
+        "Info": "Waves and Waves of Zombies to Kills in this infinite clicker.",
+        "SkillName": "Zombies Horde",
+        "SkillInfo": "Each some time, a horde of Zombies will approache you! Kill many as you can (tap them) to earn money!"
+        },
+        {
+        "Id": 6,
+        "Name": "HeroesTapTap",
+        "AvatarImage": "Heroes",
+        "Class": TYPE_MIXED,
+        "BaseCost": 130000000,
+        "Speed": 1.2,
+        "Color": "4AB648",
+        "Info": "Defeat the evil monsters, once after other. Yep, there is no way to win, just more and more enemies..",
+        "SkillName": "Heroe Tap Punch",
+        "SkillInfo": "Unlocks Critical Strike Taps.*On each tap, you have a chance of doing a Heroe Tap Punch that earns lots of money.*Cute Tip: Fortune Cat will do critical taps too!"
+        },
+        {
+        "Id": 7,
+        "Name": "Endless Racing",
+        "AvatarImage": "Racing",
+        "Class": TYPE_CASUAL,
+        "BaseCost": 1300000000,
+        "Speed": 1.2,
+        "Color": "CD2026",
+        "Info": "The Endless Hours of Le Mens. Each Day a New Driver takes the seat.",
+        "SkillName": "Endless Racing",
+        "SkillInfo": "Go to Play Games tab to play Endless Racing.  Earn Multipliers and Diamonds!"
+        },
+        {
+        "Id": 8,
+        "Name": "IdleMagnate",
+        "AvatarImage": "Magnate",
+        "Class": TYPE_HARDCORE,
+        "BaseCost": 13000000000,
+        "Speed": 1.2,
+        "Color": "CD2026",
+        "Info": "Buy, Buy Now!!!!!",
+        "SkillName": "Flash Sales",
+        "SkillInfo": "A Flash Sale notification will promp each certain time.*Upgrades will be in discount while the effect is active.*More IdleMagnate upgrades, better discounts. "
+        },
+        {
+        "Id": 9,
+        "Name": "VideoTubers",
+        "AvatarImage": "VideoTubers",
+        "Class": TYPE_CASUAL,
+        "BaseCost": 130000000000,
+        "Speed": 1.2,
+        "Color": "C5D92C",
+        "Info": "Reach the overflow number of visits and break the internet!",
+        "SkillName": "Please Suscribe",
+        "SkillInfo": "Unlocks VideoTuber helper.*VideoTuber will collect 1 diamond for each Rewarded Video you watch.*Now they are even more rewarding!"
+        },
+        {
+        "Id": 10,
+        "Name": "Maths Clicker",
+        "AvatarImage": "Maths",
+        "Class": TYPE_HARDCORE,
+        "BaseCost": 1300000000000,
+        "Speed": 1.2,
+        "Color": "CD2026",
+        "Info": "Exponentially think about Exponential Problem",
+        "SkillName": "Do the Maths",
+        "SkillInfo": "All the Clickers gain +5% speed for each Boost this clicker has done (max of 100%)"
+        },
+        {
+        "Id": 11,
+        "Name": "Sport Champions",
+        "AvatarImage": "SportChampions",
+        "Class": TYPE_CASUAL,
+        "BaseCost": 13000000000000,
+        "Speed": 1.2,
+        "Color": "F8971D",
+        "Info": "An Endless rain of Goals, Dunks and HomeRuns.",
+        "SkillName": "NONE",
+        "SkillInfo": "No Skill Yet"
+        },
+        {
+        "Id": 12,
+        "Name": "Social Incremental",
+        "AvatarImage": "Social",
+        "Class": TYPE_MIXED,
+        "BaseCost": 130000000000000,
+        "Speed": 1.2,
+        "Color": "CD2026",
+        "Info": "A Social Network without limits of Friends. ",
+        "SkillName": "NONE",
+        "SkillInfo": "No Skill Yet"
+        },
+        {
+        "Id": 13,
+        "Name": "GameDev Clicker",
+        "AvatarImage": "GameDev",
+        "Class": TYPE_HARDCORE,
+        "BaseCost": 1300000000000000,
+        "Speed": 1.2,
+        "Color": "CD2026",
+        "Info": "If Only Games were created by Idling.. Mix well with Caffeine Clicker.",
+        "SkillName": "NONE",
+        "SkillInfo": "No Skill Yet"
+        },
+        {
+        "Id": 14,
+        "Name": "Music Loops",
+        "AvatarImage": "Music",
+        "Class": TYPE_CASUAL,
+        "BaseCost": 13000000000000000,
+        "Speed": 1.2,
+        "Color": "CD2026",
+        "Info": "Musical Progressions that elevate your soul and makes your brain mutate.",
+        "SkillName": "NONE",
+        "SkillInfo": "No Skill Yet"
+        },
+        {
+        "Id": 15,
+        "Name": "Galaxy Jumpers",
+        "AvatarImage": "Galaxy",
+        "Class": TYPE_HARDCORE,
+        "BaseCost": 130000000000000000,
+        "Speed": 1.2,
+        "Color": "CD2026",
+        "Info": "The Domination of the whole Universe would take forever.",
+        "SkillName": "NONE",
+        "SkillInfo": "No Skill Yet"
+        },
+        {
+        "Id": 16,
+        "Name": "Evolution Mixes",
+        "AvatarImage": "Evolution",
+        "Class": TYPE_CASUAL,
+        "BaseCost": 1300000000000000000,
+        "Speed": 1.2,
+        "Color": "CD2026",
+        "Info": "Combining genes you can create really funny creatures.",
+        "SkillName": "NONE",
+        "SkillInfo": "No Skill Yet"
+        },
+        {
+        "Id": 17,
+        "Name": "Martial Legends",
+        "AvatarImage": "Martial",
+        "Class": TYPE_HARDCORE,
+        "BaseCost": 13000000000000000000,
+        "Speed": 1.2,
+        "Color": "F8971D",
+        "Info": "No matter how much you train, you can always be better.",
+        "SkillName": "NONE",
+        "SkillInfo": "No Skill Yet"
+        },
+        {
+        "Id": 18,
+        "Name": "Idle of Idles",
+        "AvatarImage": "IdleofIdles",
+        "Class": TYPE_MIXED,
+        "BaseCost": 130000000000000000000,
+        "Speed": 1.2,
+        "Color": "F9EC23",
+        "Info": "A micraclous inception. Play an Idle of Clickers inside an Idle of Clickers!",
+        "SkillName": "NONE",
+        "SkillInfo": "No Skill Yet"
+        }
+    ]
+
+
+};
+    
+ 
+ handlers.ClickersConfig = function (args)
+{
+   
+    return {   CLICKERS_CONFIG };
+}
