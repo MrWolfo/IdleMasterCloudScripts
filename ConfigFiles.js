@@ -232,7 +232,9 @@ var CLICKERS_CONFIG =
  handlers.ClickersConfig = function (args)
 {
    
-    var returnData = JSON.stringify( CLICKERS_CONFIG);
 
-    return returnData;
+   
+    //var returnData = JSON.stringify( CLICKERS_CONFIG);
+
+    return CLICKERS_CONFIG;
 }
