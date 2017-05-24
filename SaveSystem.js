@@ -99,7 +99,9 @@ handlers.GetClickersData = function( args )
         formattedString += clicker.IsAscended + "&";
         formattedString += clicker.SkillLevel + "&";
         formattedString += clicker.MinionsLevel + "&";
-        formattedString += clicker.Multipliers + "#";
+        formattedString += clicker.Multipliers + "&";
+        formattedString += clicker.Timer ;
+        formattedString +=  "#";
     }
     formattedString = formattedString.substring(0,formattedString.length-1);
 
