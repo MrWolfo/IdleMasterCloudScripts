@@ -39,7 +39,8 @@ handlers.SetClickersData = function( args )
         var Clicker_SkillLevel   = ClickerExploded[4];
         var Clicker_MinionsLevel = ClickerExploded[5];
         var Clicker_Multipliers  = ClickerExploded[6];
-        
+        var Clicker_TimeCounter  = ClickerExploded[7];
+
         var Clicker_JSON = 
         {
              "Level"        : Clicker_Level,
@@ -47,7 +48,8 @@ handlers.SetClickersData = function( args )
              "IsAscended"   : Clicker_IsAscended,
              "SkillLevel"   : Clicker_SkillLevel,
              "MinionsLevel" : Clicker_MinionsLevel,
-             "Multipliers"  : Clicker_Multipliers
+             "Multipliers"  : Clicker_Multipliers,
+             "Timer"        : Clicker_TimeCounter
         };
 
         ClickersData_New[Clicker_ID]  = Clicker_JSON;   
