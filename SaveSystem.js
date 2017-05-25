@@ -226,13 +226,13 @@ function Save_Clickers(data)
 
 function Load_Clickers(data)
 {
-    Data_Clickers = Request_SavedGame("Clickers",Data_TapManager);
+    Data_Clickers = Request_SavedGame("Clickers",Data_Clickers);
 
     var formattedString = "";
 
-    for(var aKey of Object.keys( ClickerData_Saved) )
+    for(var aKey of Object.keys( Data_Clickers) )
     {
-        var clicker = ClickerData_Saved[aKey];
+        var clicker = Data_Clickers[aKey];
         
         formattedString += aKey + "&";
         formattedString += clicker.Level + "&";
