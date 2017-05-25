@@ -153,7 +153,7 @@ function Save_TapManager(data)
 {
     var DataObj = Request_SavedGame("TapManager",Data_TapManager);
 
-    var ExplodedValues = DataObj.split("#");
+    var ExplodedValues = data.split("#");
     for (var dataString of ExplodedValues)
     {
         DataObj.TapPower    = dataString[0];
