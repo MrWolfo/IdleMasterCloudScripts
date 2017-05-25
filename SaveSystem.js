@@ -47,6 +47,54 @@ function Request_SavedGame(SaveName, DefaultObject)
     return DefaultObject;
 }
 
+function Save_Data(SaveName,data)
+{
+    var save = server.UpdateUserInternalData(
+            {
+                    PlayFabId : currentPlayerId,
+                    Data : {SaveName :  JSON.stringify( data ) } 
+                } 
+        );
+}
+
+
+//////
+//      --------------------------------------- PLAYER DATA INFO  ----------------------------------                        
+//////
+var Data_PlayerData = 
+{
+    "PlayerName" : "",
+    "TestMode"   : false,
+    "APKVersion" : ""
+};
+
+
+function Save_PlayerData(data)
+{
+    var DataObj = Request_SavedGame("PlayerData",Data_PlayerData);
+
+    var ExplodedValues = DataObj.split("#");
+    for (var dataString of ExplodedValues)
+    {
+        DataObj.PlayerName = dataString[0];
+        DataObj.TestMode   = (dataString[1] == "1");
+        DataObj.APKVersion = dataString[2];
+    }
+
+    Save_Data("PlayerData",DataObj);
+}
+
+function Load_PlayerData(data)
+{
+    Data_PlayerData = Request_SavedGame("PlayerData",Data_PlayerData);
+    var ReturnString ="";
+    ReturnString += DataObj.PlayerName +"#";
+    ReturnString += DataObj.TestMode ? "1" : "0" + "#";
+    ReturnString += DataObj.APKVersion;
+
+    return ReturnString;
+}
+
 
 //////
 //      --------------------------------------- GAME LOGIC INFO  ----------------------------------                        
