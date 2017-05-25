@@ -120,6 +120,8 @@ function Save_GameLogic(data)
     Data_GameLogic = Request_SavedGame("GameLogic",Data_GameLogic);
 
     Data_GameLogic.LastSavedTime = data;
+
+    Save_Data("GameLogic",Data_GameLogic);
 }
 
 function Load_GameLogic(data)
