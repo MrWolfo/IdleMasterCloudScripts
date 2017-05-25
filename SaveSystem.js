@@ -48,7 +48,7 @@ function Request_SavedGame(SaveName, DefaultObject)
     }
     else
     {
-        Save_Data(SaveName,);
+        Save_Data(SaveName,DefaultObject);
     }
     return DefaultObject;
 }
