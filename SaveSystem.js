@@ -17,14 +17,14 @@ handlers.SaveInfo = function( args )
 
     }
 
-
+    return OK;
 }
 
 handlers.LoadInfo = function( args )
 {
     switch(SAVE_NAME)
     {
-           case "GameLogic" : Save_GameLogic(); break;
+           case "GameLogic" : return  Load_GameLogic(); break;
 
     }
     
