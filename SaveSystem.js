@@ -60,7 +60,7 @@ function Request_SavedGame(SaveName, DefaultObject)
 function Save_Data(SaveName,dataInfo)
 {
     var SaveData = {};
-    SaveData[SaveName] = JSON.stringify( dataInfo);
+    SaveData = JSON.stringify( dataInfo);
 
     var save = server.UpdateUserInternalData(
             {
