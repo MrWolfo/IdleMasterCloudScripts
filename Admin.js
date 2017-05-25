@@ -7,7 +7,7 @@ handlers.RefreshCloudScript = function( args )
     var headers = {"X-SecretKey" : "Y3XPTHQKPUXRJRYAZAUF7AXZCQNJ1Q99KWNB41KK4UBXWD653B"};
     var responseString =  http.request(url,method,contentBody,contentType,headers);
 
-    var data = JSON.parse( responseString.data );
+    var data = responseString.data;
 
     return { pepote: data}
 }
