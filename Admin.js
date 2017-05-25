@@ -9,5 +9,5 @@ handlers.RefreshCloudScript = function( args )
 
     var data = responseString.data;
 
-    return { pepote: data}
+    return { ok : "lala" , pepote: data}
 }
