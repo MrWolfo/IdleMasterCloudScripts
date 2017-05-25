@@ -163,7 +163,7 @@ function Save_TapManager(data)
 
     Save_Data("TapManager",DataObj);
 
-    return data;
+    return ExplodedValues;
 }
 
 function Load_TapManager(data)
