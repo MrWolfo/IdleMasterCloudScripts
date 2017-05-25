@@ -143,7 +143,7 @@ function Load_GameLogic(data)
 //////
 var Data_TapManager = 
 {
-    "TapPower" : "1",
+    "TapLevel" : "1",
     "Multipliers" : "",
     "TapsQty" : "0"
 };
@@ -156,12 +156,14 @@ function Save_TapManager(data)
     var ExplodedValues = data.split("#");
     for (var dataString of ExplodedValues)
     {
-        DataObj.TapPower    = dataString[0];
+        DataObj.TapLevel    = dataString[0];
         DataObj.Multipliers = dataString[1];
         DataObj.TapsQty     = dataString[2];
     }
 
     Save_Data("TapManager",DataObj);
+
+    return DataObj;
 }
 
 function Load_TapManager(data)
@@ -169,7 +171,7 @@ function Load_TapManager(data)
     Data_TapManager = Request_SavedGame("TapManager",Data_TapManager);
 
     var ReturnString ="";
-    ReturnString += Data_TapManager.TapPower +"#";
+    ReturnString += Data_TapManager.TapLevel +"#";
     ReturnString += Data_TapManager.Multipliers + "#";
     ReturnString += Data_TapManager.TapsQty;
 
