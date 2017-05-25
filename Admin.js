@@ -9,5 +9,5 @@ handlers.RefreshCloudScript = function( args )
 
     var data = responseString;
 
-    return { services }
+    return { admin }
 }
