@@ -89,9 +89,12 @@ function Save_PlayerData(data)
 
 function Load_PlayerData(data)
 {
-    return "lalala";
+    
 
     Data_PlayerData = Request_SavedGame("PlayerData",Data_PlayerData);
+
+    return Data_PlayerData;
+
     var ReturnString ="";
     ReturnString += DataObj.PlayerName +"#";
     ReturnString += DataObj.TestMode ? "1" : "0" + "#";
