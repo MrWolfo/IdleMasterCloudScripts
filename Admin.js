@@ -22,5 +22,5 @@ handlers.RefreshCloudScript = function( args )
     var headers = {"X-SecretKey" : "Y3XPTHQKPUXRJRYAZAUF7AXZCQNJ1Q99KWNB41KK4UBXWD653B"};
     var responseString =  http.request(url,method,contentBody,contentType,headers);
 
-    return { answer : data.data.Revision };
+    return { answer : responseString };
 }
