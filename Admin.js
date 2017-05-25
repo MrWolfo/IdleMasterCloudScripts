@@ -1,4 +1,4 @@
-var opertuzo = this;
+
 
 handlers.RefreshCloudScript = function( args )
 {
@@ -11,5 +11,5 @@ handlers.RefreshCloudScript = function( args )
 
     var data = responseString;
 
-    return { opertuzo }
+    return { lala : responseString };
 }
