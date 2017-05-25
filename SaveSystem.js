@@ -13,10 +13,10 @@ handlers.SaveInfo = function( args )
 
     switch(SAVE_NAME)
     {
-           case "GameLogic" : return  Save_GameLogic(); break;
-           case "PlayerData" : return Save_PlayerData(); break;
-           case "TapManager" : return Save_TapManager(); break;
-           case "Clickers" : return   Save_Clickers(); break;
+           case "GameLogic" : return  Save_GameLogic(DATA); break;
+           case "PlayerData" : return Save_PlayerData(DATA); break;
+           case "TapManager" : return Save_TapManager(DATA); break;
+           case "Clickers" : return   Save_Clickers(DATA); break;
     }
 
     return OK;
@@ -125,9 +125,7 @@ function Save_GameLogic(data)
 
     Data_GameLogic.LastSavedTime = data;
 
-    //Save_Data("GameLogic",Data_GameLogic);
-
-    return data;
+    Save_Data("GameLogic",Data_GameLogic);
 }
 
 function Load_GameLogic(data)
