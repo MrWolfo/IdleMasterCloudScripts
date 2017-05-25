@@ -1,5 +1,7 @@
 
 
+//--- THIS IS EXECUTED BY A RULE, PLEASE REMOVE THE RULE WHEN THE GAME IS ONLINE
+
 handlers.RefreshCloudScript = function( args )
 {
     var url = "https://6C14.playfabapi.com/Admin/GetCloudScriptRevision";
