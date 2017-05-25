@@ -22,6 +22,8 @@ handlers.SaveInfo = function( args )
 
 handlers.LoadInfo = function( args )
 {
+    var SAVE_NAME = args["SaveName"];
+
     switch(SAVE_NAME)
     {
            case "GameLogic" : return  Load_GameLogic(); break;
