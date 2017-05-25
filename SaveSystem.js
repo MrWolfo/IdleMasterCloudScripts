@@ -15,6 +15,7 @@ handlers.SaveInfo = function( args )
     {
            case "GameLogic" : Save_GameLogic(); break;
            case "PlayerData" : Save_PlayerData(); break;
+           case "TapManager" : return  Save_TapManager(); break;
     }
 
     return OK;
@@ -28,7 +29,7 @@ handlers.LoadInfo = function( args )
     {
            case "GameLogic" : return  Load_GameLogic(); break;
            case "PlayerData" : return  Load_PlayerData(); break;
-
+           case "TapManager" : return  Load_TapManager(); break;
     }
     
 }
@@ -134,6 +135,43 @@ function Load_GameLogic(data)
 }
 
 
+//////
+//      --------------------------------------- TAP MANAGER -- INFO  ----------------------------------                        
+//////
+var Data_TapManager = 
+{
+    "TapPower" : "1",
+    "Multipliers" : "",
+    "TapsQty" : "0"
+};
+
+
+function Save_TapManager(data)
+{
+    var DataObj = Request_SavedGame("TapManager",Data_TapManager);
+
+    var ExplodedValues = DataObj.split("#");
+    for (var dataString of ExplodedValues)
+    {
+        DataObj.TapPower    = dataString[0];
+        DataObj.Multipliers = dataString[1];
+        DataObj.TapsQty     = dataString[2];
+    }
+
+    Save_Data("TapManager",DataObj);
+}
+
+function Load_TapManager(data)
+{
+    Data_TapManager = Request_SavedGame("TapManager",Data_TapManager);
+
+    var ReturnString ="";
+    ReturnString += Data_TapManager.TapPower +"#";
+    ReturnString += Data_TapManager.Multipliers + "#";
+    ReturnString += Data_TapManager.TapsQty;
+
+    return ReturnString;
+}
 
 
 
