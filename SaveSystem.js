@@ -60,7 +60,7 @@ function Request_SavedGame(SaveName, DefaultObject)
 function Save_Data(SaveName,dataInfo)
 {
     var SaveData = {};
-    SaveData[SaveName] = dataInfo; //JSON.stringify( dataInfo);
+    SaveData[SaveName] = JSON.stringify( dataInfo);
 
     var save = server.UpdateUserInternalData(
             {
@@ -126,6 +126,8 @@ function Save_GameLogic(data)
     Data_GameLogic.LastSavedTime = data;
 
     Save_Data("GameLogic",Data_GameLogic);
+
+    return Data_GameLogic;
 }
 
 function Load_GameLogic(data)
