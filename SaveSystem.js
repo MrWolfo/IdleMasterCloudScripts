@@ -89,16 +89,12 @@ function Save_PlayerData(data)
 
 function Load_PlayerData(data)
 {
-    
-
     Data_PlayerData = Request_SavedGame("PlayerData",Data_PlayerData);
 
-    return Data_PlayerData;
-
     var ReturnString ="";
-    ReturnString += DataObj.PlayerName +"#";
-    ReturnString += DataObj.TestMode ? "1" : "0" + "#";
-    ReturnString += DataObj.APKVersion;
+    ReturnString += Data_PlayerData.PlayerName +"#";
+    ReturnString += Data_PlayerData.TestMode ? "1" : "0" + "#";
+    ReturnString += Data_PlayerData.APKVersion;
 
     return ReturnString;
 }
