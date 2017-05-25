@@ -14,7 +14,7 @@ handlers.SaveInfo = function( args )
     switch(SAVE_NAME)
     {
            case "GameLogic" : Save_GameLogic(); break;
-
+           case "PlayerData" : Save_PlayerData(); break;
     }
 
     return OK;
@@ -25,6 +25,7 @@ handlers.LoadInfo = function( args )
     switch(SAVE_NAME)
     {
            case "GameLogic" : return  Load_GameLogic(); break;
+           case "PlayerData" : return  Load_PlayerData(); break;
 
     }
     
