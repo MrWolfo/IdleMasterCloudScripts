@@ -46,7 +46,10 @@ function Request_SavedGame(SaveName, DefaultObject)
     {
         DefaultObject = JSON.parse(dataRequest.Data[SaveName].Value) ;
     }
-
+    else
+    {
+        Save_Data(SaveName,DefaultObject);
+    }
     return DefaultObject;
 }
 
