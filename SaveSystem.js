@@ -127,7 +127,7 @@ function Save_GameLogic(data)
 
     //Save_Data("GameLogic",Data_GameLogic);
 
-    return Data_GameLogic;
+    return data;
 }
 
 function Load_GameLogic(data)
