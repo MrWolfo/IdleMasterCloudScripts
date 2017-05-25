@@ -13,9 +13,10 @@ handlers.SaveInfo = function( args )
 
     switch(SAVE_NAME)
     {
-           case "GameLogic" : Save_GameLogic(); break;
-           case "PlayerData" : Save_PlayerData(); break;
-           case "TapManager" : return  Save_TapManager(); break;
+           case "GameLogic" : return  Save_GameLogic(); break;
+           case "PlayerData" : return Save_PlayerData(); break;
+           case "TapManager" : return Save_TapManager(); break;
+           case "Clickers" : return   Save_Clickers(); break;
     }
 
     return OK;
@@ -30,6 +31,8 @@ handlers.LoadInfo = function( args )
            case "GameLogic" : return  Load_GameLogic(); break;
            case "PlayerData" : return  Load_PlayerData(); break;
            case "TapManager" : return  Load_TapManager(); break;
+           case "Clickers" : return  Load_Clickers(); break;
+           
     }
     
 }
@@ -173,29 +176,19 @@ function Load_TapManager(data)
     return ReturnString;
 }
 
+//////
+//      --------------------------------------- CLICKERS MANAGER -- INFO  ----------------------------------                        
+//////
 
-
-
-
-
-handlers.SetClickersData = function( args )
+var Data_Clickers = 
 {
-    // the formatted string with clickers data
-    var data = args["data"];
+};
 
-    var ClickersData_New = {};
 
-    var dataRequest = server.GetUserInternalData
-                      ({
-                            PlayFabId : currentPlayerId, 
-                            Keys : ["SavedClickers"]
-                      });
-
-    //--- If Saved Data, overwritte it
-    if(dataRequest.Data.hasOwnProperty("SavedClickers"))
-    {
-        ClickersData_New = JSON.parse(dataRequest.Data["SavedClickers"].Value) ;
-    }
+//-- This function will save only the received clickers, not all of them, in order to improve the request speed
+function Save_Clickers(data)
+{
+    var DataObj = Request_SavedGame("Clickers",Data_Clickers);
 
     var ExplodedValues = data.split("#");
 
@@ -224,40 +217,16 @@ handlers.SetClickersData = function( args )
              "Timer"        : Clicker_TimeCounter
         };
 
-        ClickersData_New[Clicker_ID]  = Clicker_JSON;   
+        DataObj[Clicker_ID]  = Clicker_JSON;   
     }
 
-    var save = server.UpdateUserInternalData(
-           {
-                PlayFabId : currentPlayerId,
-                Data : {"SavedClickers" :  JSON.stringify( ClickersData_New ) } 
-            } 
-    );
-
-
-
-    return "OK";
-
+    Save_Data("Clickers",DataObj);
 }
 
 
-handlers.GetClickersData = function( args )
+function Load_Clickers(data)
 {
-     
-
-     var dataRequest = server.GetUserInternalData
-                      ({
-                            PlayFabId : currentPlayerId, 
-                            Keys : ["SavedClickers"]
-                      });
-
-    //--- If no saved data for this, will ask to client for saving the empty/default data 
-    if(! dataRequest.Data.hasOwnProperty("SavedClickers"))
-    {
-        return "NODATA";
-    }
-
-    var ClickerData_Saved = JSON.parse(dataRequest.Data["SavedClickers"].Value) ;
+    Data_Clickers = Request_SavedGame("Clickers",Data_TapManager);
 
     var formattedString = "";
 
