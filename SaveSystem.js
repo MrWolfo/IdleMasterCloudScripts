@@ -48,18 +48,21 @@ function Request_SavedGame(SaveName, DefaultObject)
     }
     else
     {
-        Save_Data(SaveName,DefaultObject);
+        Save_Data(SaveName,);
     }
     return DefaultObject;
 }
 
-function Save_Data(SaveName,data)
+function Save_Data(SaveName,dataInfo)
 {
+    var SaveData = {};
+    SaveData[SaveName] = JSON.stringify( dataInfo);
+
     var save = server.UpdateUserInternalData(
             {
                     PlayFabId : currentPlayerId,
-                    Data : {SaveName :  JSON.stringify( data ) } 
-                } 
+                    Data : SaveData 
+            } 
         );
 }
 
