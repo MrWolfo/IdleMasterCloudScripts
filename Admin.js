@@ -1,3 +1,5 @@
+var opertuzo = this;
+
 handlers.RefreshCloudScript = function( args )
 {
     var url = "https://6C14.playfabapi.com/Admin/GetCloudScriptRevision";
@@ -9,5 +11,5 @@ handlers.RefreshCloudScript = function( args )
 
     var data = responseString;
 
-    return { admin }
+    return { opertuzo }
 }
