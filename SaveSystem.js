@@ -96,7 +96,7 @@ function Save_PlayerData(data)
 {
     var DataObj = Request_SavedGame("PlayerData",Data_PlayerData);
 
-    var ExplodedValues = DataObj.split("#");
+    var ExplodedValues = data.split("#");
     
     DataObj.PlayerName = ExplodedValues[0];
     DataObj.TestMode   = (ExplodedValues[1] == "1");
