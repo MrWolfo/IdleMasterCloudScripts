@@ -16,7 +16,8 @@ handlers.SaveInfo = function( args )
            case "GameLogic" : return  Save_GameLogic(DATA); break;
            case "PlayerData" : return Save_PlayerData(DATA); break;
            case "TapManager" : return Save_TapManager(DATA); break;
-           case "Clickers" : return   Save_Clickers(DATA); break;
+           case "Clickers" :  return   Save_Clickers(DATA); break;
+           case "MoneyManager" : return   Save_MoneyManager(DATA); break;
     }
 
     return OK;
@@ -32,6 +33,7 @@ handlers.LoadInfo = function( args )
            case "PlayerData" : return  Load_PlayerData(); break;
            case "TapManager" : return  Load_TapManager(); break;
            case "Clickers" : return  Load_Clickers(); break;
+           case "MoneyManager" : return  Load_MoneyManager(); break;
            
     }
     
@@ -249,3 +251,53 @@ function Load_Clickers(data)
 }
 
 
+
+//////
+//      --------------------------------------- MONEY MANAGER -- INFO  ----------------------------------                        
+//////
+var Data_MoneyManager = 
+{
+    "Money"     : "0",
+    "Diamonds"  : "0",
+    "Fragments" : "0",
+    "MoneyAccumulated_LifeTime" : "0",
+    "MoneyAccumulated_Prestige" : "0",
+    "MaxMoneyThisSeasson" : "0",
+    "MaxMoneyReachedEver" : "0"
+};
+
+
+function Save_MoneyManager(data)
+{
+    var DataObj = Request_SavedGame("MoneyManager",Data_MoneyManager);
+
+    var ExplodedValues  = data.split("#");
+    DataObj.Money       = ExplodedValues[0];
+    DataObj.Diamonds    = ExplodedValues[1];
+    DataObj.Fragments   = ExplodedValues[2];
+    DataObj.MoneyAccumulated_LifeTime = ExplodedValues[3];
+    DataObj.MoneyAccumulated_Prestige = ExplodedValues[4];
+    DataObj.MaxMoneyThisSeasson       = ExplodedValues[5];
+    DataObj.MaxMoneyReachedEver       = ExplodedValues[6];
+    
+
+    Save_Data("MoneyManager",DataObj);
+
+    return ExplodedValues;
+}
+
+function Load_MoneyManager(data)
+{
+    Data_MoneyManager = Request_SavedGame("MoneyManager",Data_MoneyManager);
+
+    var ReturnString ="";
+    ReturnString += Data_MoneyManager.Money +"#";
+    ReturnString += Data_MoneyManager.Diamonds + "#";
+    ReturnString += Data_MoneyManager.Fragments + "#";
+    ReturnString += Data_MoneyManager.MoneyAccumulated_LifeTime + "#";
+    ReturnString += Data_MoneyManager.MoneyAccumulated_Prestige + "#";
+    ReturnString += Data_MoneyManager.MaxMoneyThisSeasson + "#";
+    ReturnString += Data_MoneyManager.MaxMoneyReachedEver;
+
+    return ReturnString;
+}
