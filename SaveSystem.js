@@ -365,9 +365,9 @@ var Data_FragmentMinions =
 
 function Save_FragmentMinions(data)
 {
-    var DataObj = Request_SavedGame("FragmentMinions",DataFragmentMinions);
+    var DataObj = Request_SavedGame("FragmentMinions",Data_FragmentMinions);
 
-    DataObj.Level       = data;
+    DataObj.MinionLevels       = data;
 
     Save_Data("FragmentMinions",DataObj);
 }
