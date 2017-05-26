@@ -19,6 +19,9 @@ handlers.SaveInfo = function( args )
            case "Clickers" :  return   Save_Clickers(DATA); break;
            case "MoneyManager" : return   Save_MoneyManager(DATA); break;
            case "TrainingLevel" : return   Save_TrainingLevel(DATA); break;
+           case "FragmentMinions" : return   Save_FragmentMinions(DATA); break;
+
+           
 
            
     }
@@ -38,6 +41,7 @@ handlers.LoadInfo = function( args )
            case "Clickers" : return  Load_Clickers(); break;
            case "MoneyManager" : return  Load_MoneyManager(); break;
            case "TrainingLevel" : return  Load_TrainingLevel(); break;
+           case "FragmentMinions" : return  Load_FragmentMinions(); break;
            
     }
     
@@ -342,6 +346,37 @@ function Load_TrainingLevel(data)
     ReturnString += Data_TrainingLevel.Level + "#";
     ReturnString += Data_TrainingLevel.MaxLeavelReached + "#";
     ReturnString += Data_TrainingLevel.CurrentStep_XP;
+
+    return ReturnString;
+}
+
+
+
+
+
+//////
+//      --------------------------------------- TrainingLevel -- INFO  ----------------------------------                        
+//////
+var Data_FragmentMinions = 
+{
+    "MinionLevels"      : "",
+};
+
+
+function Save_FragmentMinions(data)
+{
+    var DataObj = Request_SavedGame("FragmentMinions",DataFragmentMinions);
+
+    DataObj.Level       = data;
+
+    Save_Data("FragmentMinions",DataObj);
+}
+
+function Load_FragmentMinions(data)
+{
+    Data_FragmentMinions = Request_SavedGame("FragmentMinions",Data_FragmentMinions);
+
+    var ReturnString = Data_TrainingLevel.Level;
 
     return ReturnString;
 }
