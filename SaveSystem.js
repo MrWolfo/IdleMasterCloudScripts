@@ -20,7 +20,7 @@ handlers.SaveInfo = function( args )
            case "MoneyManager" : return   Save_MoneyManager(DATA); break;
            case "TrainingLevel" : return   Save_TrainingLevel(DATA); break;
            case "FragmentMinions" : return   Save_FragmentMinions(DATA); break;
-
+           case "PrestigeManager" : return   Save_PrestigeManager(DATA); break; 
            
 
            
@@ -42,6 +42,7 @@ handlers.LoadInfo = function( args )
            case "MoneyManager" : return  Load_MoneyManager(); break;
            case "TrainingLevel" : return  Load_TrainingLevel(); break;
            case "FragmentMinions" : return  Load_FragmentMinions(); break;
+           case "PrestigeManager" : return  Load_PrestigeManager(); break;
            
     }
     
@@ -354,7 +355,7 @@ function Load_TrainingLevel(data)
 
 
 //////
-//      --------------------------------------- TrainingLevel -- INFO  ----------------------------------                        
+//      --------------------------------------- FRAGMENT MINIONS -- INFO  ----------------------------------                        
 //////
 var Data_FragmentMinions = 
 {
@@ -376,6 +377,46 @@ function Load_FragmentMinions(data)
     Data_FragmentMinions = Request_SavedGame("FragmentMinions",Data_FragmentMinions);
 
     var ReturnString = Data_FragmentMinions.MinionLevels;
+
+    return ReturnString;
+}
+
+
+
+
+
+//////
+//      --------------------------------------- PrestigeManager -- INFO  ----------------------------------                        
+//////
+var Data_PrestigeManager = 
+{
+    "Prestiges_Qty"      : "0",
+    "LastTime_Prestiged"  : "0",
+    "SubLvl_LastPrestige" : "0"
+};
+
+
+function Save_PrestigeManager(data)
+{
+    var DataObj = Request_SavedGame("PrestigeManager",Data_PrestigeManager);
+
+    var ExplodedValues  = data.split("#");
+    DataObj.Prestiges_Qty        = ExplodedValues[0];
+    DataObj.LastTime_Prestiged   = ExplodedValues[1];
+    DataObj.SubLvl_LastPrestige  = ExplodedValues[2];
+    
+
+    Save_Data("PrestigeManager",DataObj);
+}
+
+function Load_PrestigeManager(data)
+{
+    Data_PrestigeManager = Request_SavedGame("PrestigeManager",Data_PrestigeManager);
+
+    var ReturnString ="";
+    ReturnString += Data_PrestigeManager.Prestiges_Qty + "#";
+    ReturnString += Data_PrestigeManager.LastTime_Prestiged + "#";
+    ReturnString += Data_PrestigeManager.SubLvl_LastPrestige;
 
     return ReturnString;
 }
