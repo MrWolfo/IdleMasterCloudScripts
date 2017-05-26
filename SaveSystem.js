@@ -18,6 +18,9 @@ handlers.SaveInfo = function( args )
            case "TapManager" : return Save_TapManager(DATA); break;
            case "Clickers" :  return   Save_Clickers(DATA); break;
            case "MoneyManager" : return   Save_MoneyManager(DATA); break;
+           case "TrainingLevel" : return   Save_TrainingLevel(DATA); break;
+
+           
     }
 
     return OK;
@@ -34,6 +37,7 @@ handlers.LoadInfo = function( args )
            case "TapManager" : return  Load_TapManager(); break;
            case "Clickers" : return  Load_Clickers(); break;
            case "MoneyManager" : return  Load_MoneyManager(); break;
+           case "TrainingLevel" : return  Load_TrainingLevel(); break;
            
     }
     
