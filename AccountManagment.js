@@ -304,12 +304,13 @@ handlers.ResetPlayerData = function (args)
             {
                 PlayFabId : currentPlayerId,
                 Data : {
+                    "Clickers" :  null,
                     "FragmentMinions" :  null,
                     "GameLogic" :  null,
                     "MoneyManager" :  null,
-                    "PowerCards" :  null,
-                    "RewardsManager" :  null,
-                    "TapManager" :  null,
+                    "PlayerData" :  null,
+                    "PrestigeManager" :  null,
+                    "TapManager"    : null,
                     "TrainingLevel" :  null
              } 
             });
