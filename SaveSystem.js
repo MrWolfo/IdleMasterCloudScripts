@@ -154,12 +154,9 @@ function Save_TapManager(data)
     var DataObj = Request_SavedGame("TapManager",Data_TapManager);
 
     var ExplodedValues = data.split("#");
-    for (var dataString of ExplodedValues)
-    {
-        DataObj.TapLevel    = dataString[0];
-        DataObj.Multipliers = dataString[1];
-        DataObj.TapsQty     = dataString[2];
-    }
+    DataObj.TapLevel    = ExplodedValues[0];
+    DataObj.Multipliers = ExplodedValues[1];
+    DataObj.TapsQty     = ExplodedValues[2];
 
     Save_Data("TapManager",DataObj);
 
