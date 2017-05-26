@@ -301,3 +301,43 @@ function Load_MoneyManager(data)
 
     return ReturnString;
 }
+
+
+
+//////
+//      --------------------------------------- TrainingLevel -- INFO  ----------------------------------                        
+//////
+var Data_TrainingLevel = 
+{
+    "Level"             : "1",
+    "MaxLeavelReached"  : "1",
+    "CurrentStep_XP"    : "0"
+};
+
+
+function Save_TrainingLevel(data)
+{
+    var DataObj = Request_SavedGame("TrainingLevel",Data_TrainingLevel);
+
+    var ExplodedValues  = data.split("#");
+    DataObj.Level       = ExplodedValues[0];
+    DataObj.MaxLeavelReached    = ExplodedValues[1];
+    DataObj.CurrentStep_XP   = ExplodedValues[2];
+    
+
+    Save_Data("TrainingLevel",DataObj);
+
+    return ExplodedValues;
+}
+
+function Load_TrainingLevel(data)
+{
+    Data_TrainingLevel = Request_SavedGame("TrainingLevel",Data_TrainingLevel);
+
+    var ReturnString ="";
+    ReturnString += Data_TrainingLevel.Level + "#";
+    ReturnString += Data_TrainingLevel.MaxLeavelReached + "#";
+    ReturnString += Data_TrainingLevel.CurrentStep_XP;
+
+    return ReturnString;
+}
