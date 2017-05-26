@@ -376,7 +376,7 @@ function Load_FragmentMinions(data)
 {
     Data_FragmentMinions = Request_SavedGame("FragmentMinions",Data_FragmentMinions);
 
-    var ReturnString = Data_TrainingLevel.Level;
+    var ReturnString = Data_FragmentMinions.Level;
 
     return ReturnString;
 }
