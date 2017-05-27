@@ -240,16 +240,16 @@ var CLICKERS_BOOST_CONFIG =
             [
                 { "Level" : 10, "Type" : "TAP_POWER" , "Value"  : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 25, "Type" : "SPECIAL_SKILL" , "Value"  : "1.1" , "Info" : "" , "LongInfo":""},
-                { "Level" : 50, "Type" : "TAP_POWER" , "Value"  : "1.1" , "Info" : "" , "LongInfo":""},
+                { "Level" : 50, "Type" : "MINION_1" , "Value"  : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 100, "Type" : "CLASS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 200, "Type" : "TAP_POWER" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 300, "Type" : "CLASS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
-                { "Level" : 400, "Type" : "SPECIAL_SKILL" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
+                { "Level" : 400, "Type" : "MINION_2" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 500, "Type" : "ALL_CLICKERS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 600, "Type" : "TAP_POWER" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 700, "Type" : "CLASS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 800, "Type" : "CLASS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
-                { "Level" : 900, "Type" : "ALL_CLICKERS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""}
+                { "Level" : 900, "Type" : "MINION_3" , "Value" : "1.1" , "Info" : "" , "LongInfo":""}
             ]
         },
         {
@@ -258,16 +258,16 @@ var CLICKERS_BOOST_CONFIG =
             [
                 { "Level" : 10, "Type" : "TAP_POWER" , "Value"  : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 25, "Type" : "SPECIAL_SKILL" , "Value"  : "1.1" , "Info" : "" , "LongInfo":""},
-                { "Level" : 50, "Type" : "TAP_POWER" , "Value"  : "1.1" , "Info" : "" , "LongInfo":""},
+                { "Level" : 50, "Type" : "MINION_1" , "Value"  : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 100, "Type" : "CLASS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 200, "Type" : "TAP_POWER" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 300, "Type" : "CLASS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
-                { "Level" : 400, "Type" : "SPECIAL_SKILL" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
+                { "Level" : 400, "Type" : "MINION_2" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 500, "Type" : "ALL_CLICKERS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 600, "Type" : "TAP_POWER" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 700, "Type" : "CLASS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 800, "Type" : "CLASS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
-                { "Level" : 900, "Type" : "ALL_CLICKERS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""}
+                { "Level" : 900, "Type" : "MINION_3" , "Value" : "1.1" , "Info" : "" , "LongInfo":""}
             ]
         },{
             "clicker"  : "Fantasy",
@@ -275,16 +275,16 @@ var CLICKERS_BOOST_CONFIG =
             [
                 { "Level" : 10, "Type" : "TAP_POWER" , "Value"  : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 25, "Type" : "SPECIAL_SKILL" , "Value"  : "1.1" , "Info" : "" , "LongInfo":""},
-                { "Level" : 50, "Type" : "TAP_POWER" , "Value"  : "1.1" , "Info" : "" , "LongInfo":""},
+                { "Level" : 50, "Type" : "MINION_1" , "Value"  : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 100, "Type" : "CLASS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 200, "Type" : "TAP_POWER" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 300, "Type" : "CLASS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
-                { "Level" : 400, "Type" : "SPECIAL_SKILL" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
+                { "Level" : 400, "Type" : "MINION_2" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 500, "Type" : "ALL_CLICKERS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 600, "Type" : "TAP_POWER" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 700, "Type" : "CLASS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 800, "Type" : "CLASS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
-                { "Level" : 900, "Type" : "ALL_CLICKERS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""}
+                { "Level" : 900, "Type" : "MINION_3" , "Value" : "1.1" , "Info" : "" , "LongInfo":""}
             ]
         },{
             "clicker"  : "Caffeine",
@@ -292,16 +292,16 @@ var CLICKERS_BOOST_CONFIG =
             [
                 { "Level" : 10, "Type" : "TAP_POWER" , "Value"  : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 25, "Type" : "SPECIAL_SKILL" , "Value"  : "1.1" , "Info" : "" , "LongInfo":""},
-                { "Level" : 50, "Type" : "TAP_POWER" , "Value"  : "1.1" , "Info" : "" , "LongInfo":""},
+                { "Level" : 50, "Type" : "MINION_1" , "Value"  : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 100, "Type" : "CLASS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 200, "Type" : "TAP_POWER" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 300, "Type" : "CLASS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
-                { "Level" : 400, "Type" : "SPECIAL_SKILL" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
+                { "Level" : 400, "Type" : "MINION_2" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 500, "Type" : "ALL_CLICKERS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 600, "Type" : "TAP_POWER" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 700, "Type" : "CLASS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 800, "Type" : "CLASS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
-                { "Level" : 900, "Type" : "ALL_CLICKERS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""}
+                { "Level" : 900, "Type" : "MINION_3" , "Value" : "1.1" , "Info" : "" , "LongInfo":""}
             ]
         },{
             "clicker"  : "Zombie",
@@ -309,16 +309,16 @@ var CLICKERS_BOOST_CONFIG =
             [
                 { "Level" : 10, "Type" : "TAP_POWER" , "Value"  : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 25, "Type" : "SPECIAL_SKILL" , "Value"  : "1.1" , "Info" : "" , "LongInfo":""},
-                { "Level" : 50, "Type" : "TAP_POWER" , "Value"  : "1.1" , "Info" : "" , "LongInfo":""},
+                { "Level" : 50, "Type" : "MINION_1" , "Value"  : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 100, "Type" : "CLASS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 200, "Type" : "TAP_POWER" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 300, "Type" : "CLASS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
-                { "Level" : 400, "Type" : "SPECIAL_SKILL" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
+                { "Level" : 400, "Type" : "MINION_2" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 500, "Type" : "ALL_CLICKERS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 600, "Type" : "TAP_POWER" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 700, "Type" : "CLASS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 800, "Type" : "CLASS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
-                { "Level" : 900, "Type" : "ALL_CLICKERS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""}
+                { "Level" : 900, "Type" : "MINION_3" , "Value" : "1.1" , "Info" : "" , "LongInfo":""}
             ]
         },{
             "clicker"  : "Heroes",
@@ -326,16 +326,16 @@ var CLICKERS_BOOST_CONFIG =
             [
                 { "Level" : 10, "Type" : "TAP_POWER" , "Value"  : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 25, "Type" : "SPECIAL_SKILL" , "Value"  : "1.1" , "Info" : "" , "LongInfo":""},
-                { "Level" : 50, "Type" : "TAP_POWER" , "Value"  : "1.1" , "Info" : "" , "LongInfo":""},
+                { "Level" : 50, "Type" : "MINION_1" , "Value"  : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 100, "Type" : "CLASS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 200, "Type" : "TAP_POWER" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 300, "Type" : "CLASS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
-                { "Level" : 400, "Type" : "SPECIAL_SKILL" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
+                { "Level" : 400, "Type" : "MINION_2" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 500, "Type" : "ALL_CLICKERS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 600, "Type" : "TAP_POWER" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 700, "Type" : "CLASS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 800, "Type" : "CLASS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
-                { "Level" : 900, "Type" : "ALL_CLICKERS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""}
+                { "Level" : 900, "Type" : "MINION_3" , "Value" : "1.1" , "Info" : "" , "LongInfo":""}
             ]
         },{
             "clicker"  : "Racing",
@@ -343,16 +343,16 @@ var CLICKERS_BOOST_CONFIG =
             [
                 { "Level" : 10, "Type" : "TAP_POWER" , "Value"  : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 25, "Type" : "SPECIAL_SKILL" , "Value"  : "1.1" , "Info" : "" , "LongInfo":""},
-                { "Level" : 50, "Type" : "TAP_POWER" , "Value"  : "1.1" , "Info" : "" , "LongInfo":""},
+                { "Level" : 50, "Type" : "MINION_1" , "Value"  : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 100, "Type" : "CLASS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 200, "Type" : "TAP_POWER" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 300, "Type" : "CLASS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
-                { "Level" : 400, "Type" : "SPECIAL_SKILL" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
+                { "Level" : 400, "Type" : "MINION_2" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 500, "Type" : "ALL_CLICKERS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 600, "Type" : "TAP_POWER" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 700, "Type" : "CLASS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 800, "Type" : "CLASS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
-                { "Level" : 900, "Type" : "ALL_CLICKERS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""}
+                { "Level" : 900, "Type" : "MINION_3" , "Value" : "1.1" , "Info" : "" , "LongInfo":""}
             ]
         },{
             "clicker"  : "Magnate",
@@ -360,16 +360,16 @@ var CLICKERS_BOOST_CONFIG =
             [
                 { "Level" : 10, "Type" : "TAP_POWER" , "Value"  : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 25, "Type" : "SPECIAL_SKILL" , "Value"  : "1.1" , "Info" : "" , "LongInfo":""},
-                { "Level" : 50, "Type" : "TAP_POWER" , "Value"  : "1.1" , "Info" : "" , "LongInfo":""},
+                { "Level" : 50, "Type" : "MINION_1" , "Value"  : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 100, "Type" : "CLASS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 200, "Type" : "TAP_POWER" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 300, "Type" : "CLASS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
-                { "Level" : 400, "Type" : "SPECIAL_SKILL" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
+                { "Level" : 400, "Type" : "MINION_2" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 500, "Type" : "ALL_CLICKERS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 600, "Type" : "TAP_POWER" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 700, "Type" : "CLASS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 800, "Type" : "CLASS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
-                { "Level" : 900, "Type" : "ALL_CLICKERS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""}
+                { "Level" : 900, "Type" : "MINION_3" , "Value" : "1.1" , "Info" : "" , "LongInfo":""}
             ]
         },{
             "clicker"  : "VideoTubers",
@@ -377,16 +377,16 @@ var CLICKERS_BOOST_CONFIG =
             [
                 { "Level" : 10, "Type" : "TAP_POWER" , "Value"  : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 25, "Type" : "SPECIAL_SKILL" , "Value"  : "1.1" , "Info" : "" , "LongInfo":""},
-                { "Level" : 50, "Type" : "TAP_POWER" , "Value"  : "1.1" , "Info" : "" , "LongInfo":""},
+                { "Level" : 50, "Type" : "MINION_1" , "Value"  : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 100, "Type" : "CLASS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 200, "Type" : "TAP_POWER" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 300, "Type" : "CLASS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
-                { "Level" : 400, "Type" : "SPECIAL_SKILL" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
+                { "Level" : 400, "Type" : "MINION_2" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 500, "Type" : "ALL_CLICKERS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 600, "Type" : "TAP_POWER" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 700, "Type" : "CLASS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 800, "Type" : "CLASS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
-                { "Level" : 900, "Type" : "ALL_CLICKERS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""}
+                { "Level" : 900, "Type" : "MINION_3" , "Value" : "1.1" , "Info" : "" , "LongInfo":""}
             ]
         },{
             "clicker"  : "Maths",
@@ -394,16 +394,16 @@ var CLICKERS_BOOST_CONFIG =
             [
                 { "Level" : 10, "Type" : "TAP_POWER" , "Value"  : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 25, "Type" : "SPECIAL_SKILL" , "Value"  : "1.1" , "Info" : "" , "LongInfo":""},
-                { "Level" : 50, "Type" : "TAP_POWER" , "Value"  : "1.1" , "Info" : "" , "LongInfo":""},
+                { "Level" : 50, "Type" : "MINION_1" , "Value"  : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 100, "Type" : "CLASS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 200, "Type" : "TAP_POWER" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 300, "Type" : "CLASS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
-                { "Level" : 400, "Type" : "SPECIAL_SKILL" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
+                { "Level" : 400, "Type" : "MINION_2" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 500, "Type" : "ALL_CLICKERS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 600, "Type" : "TAP_POWER" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 700, "Type" : "CLASS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 800, "Type" : "CLASS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
-                { "Level" : 900, "Type" : "ALL_CLICKERS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""}
+                { "Level" : 900, "Type" : "MINION_3" , "Value" : "1.1" , "Info" : "" , "LongInfo":""}
             ]
         },{
             "clicker"  : "SportChampions",
@@ -411,16 +411,16 @@ var CLICKERS_BOOST_CONFIG =
             [
                 { "Level" : 10, "Type" : "TAP_POWER" , "Value"  : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 25, "Type" : "SPECIAL_SKILL" , "Value"  : "1.1" , "Info" : "" , "LongInfo":""},
-                { "Level" : 50, "Type" : "TAP_POWER" , "Value"  : "1.1" , "Info" : "" , "LongInfo":""},
+                { "Level" : 50, "Type" : "MINION_1" , "Value"  : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 100, "Type" : "CLASS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 200, "Type" : "TAP_POWER" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 300, "Type" : "CLASS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
-                { "Level" : 400, "Type" : "SPECIAL_SKILL" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
+                { "Level" : 400, "Type" : "MINION_2" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 500, "Type" : "ALL_CLICKERS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 600, "Type" : "TAP_POWER" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 700, "Type" : "CLASS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 800, "Type" : "CLASS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
-                { "Level" : 900, "Type" : "ALL_CLICKERS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""}
+                { "Level" : 900, "Type" : "MINION_3" , "Value" : "1.1" , "Info" : "" , "LongInfo":""}
             ]
         },{
             "clicker"  : "Social",
@@ -428,16 +428,16 @@ var CLICKERS_BOOST_CONFIG =
             [
                 { "Level" : 10, "Type" : "TAP_POWER" , "Value"  : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 25, "Type" : "SPECIAL_SKILL" , "Value"  : "1.1" , "Info" : "" , "LongInfo":""},
-                { "Level" : 50, "Type" : "TAP_POWER" , "Value"  : "1.1" , "Info" : "" , "LongInfo":""},
+                { "Level" : 50, "Type" : "MINION_1" , "Value"  : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 100, "Type" : "CLASS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 200, "Type" : "TAP_POWER" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 300, "Type" : "CLASS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
-                { "Level" : 400, "Type" : "SPECIAL_SKILL" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
+                { "Level" : 400, "Type" : "MINION_2" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 500, "Type" : "ALL_CLICKERS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 600, "Type" : "TAP_POWER" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 700, "Type" : "CLASS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 800, "Type" : "CLASS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
-                { "Level" : 900, "Type" : "ALL_CLICKERS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""}
+                { "Level" : 900, "Type" : "MINION_3" , "Value" : "1.1" , "Info" : "" , "LongInfo":""}
             ]
         },{
             "clicker"  : "GameDev",
@@ -445,16 +445,16 @@ var CLICKERS_BOOST_CONFIG =
             [
                 { "Level" : 10, "Type" : "TAP_POWER" , "Value"  : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 25, "Type" : "SPECIAL_SKILL" , "Value"  : "1.1" , "Info" : "" , "LongInfo":""},
-                { "Level" : 50, "Type" : "TAP_POWER" , "Value"  : "1.1" , "Info" : "" , "LongInfo":""},
+                { "Level" : 50, "Type" : "MINION_1" , "Value"  : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 100, "Type" : "CLASS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 200, "Type" : "TAP_POWER" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 300, "Type" : "CLASS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
-                { "Level" : 400, "Type" : "SPECIAL_SKILL" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
+                { "Level" : 400, "Type" : "MINION_2" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 500, "Type" : "ALL_CLICKERS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 600, "Type" : "TAP_POWER" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 700, "Type" : "CLASS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 800, "Type" : "CLASS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
-                { "Level" : 900, "Type" : "ALL_CLICKERS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""}
+                { "Level" : 900, "Type" : "MINION_3" , "Value" : "1.1" , "Info" : "" , "LongInfo":""}
             ]
         },{
             "clicker"  : "Music",
@@ -462,16 +462,16 @@ var CLICKERS_BOOST_CONFIG =
             [
                 { "Level" : 10, "Type" : "TAP_POWER" , "Value"  : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 25, "Type" : "SPECIAL_SKILL" , "Value"  : "1.1" , "Info" : "" , "LongInfo":""},
-                { "Level" : 50, "Type" : "TAP_POWER" , "Value"  : "1.1" , "Info" : "" , "LongInfo":""},
+                { "Level" : 50, "Type" : "MINION_1" , "Value"  : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 100, "Type" : "CLASS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 200, "Type" : "TAP_POWER" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 300, "Type" : "CLASS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
-                { "Level" : 400, "Type" : "SPECIAL_SKILL" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
+                { "Level" : 400, "Type" : "MINION_2" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 500, "Type" : "ALL_CLICKERS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 600, "Type" : "TAP_POWER" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 700, "Type" : "CLASS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 800, "Type" : "CLASS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
-                { "Level" : 900, "Type" : "ALL_CLICKERS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""}
+                { "Level" : 900, "Type" : "MINION_3" , "Value" : "1.1" , "Info" : "" , "LongInfo":""}
             ]
         },{
             "clicker"  : "Galaxy",
@@ -479,16 +479,16 @@ var CLICKERS_BOOST_CONFIG =
             [
                 { "Level" : 10, "Type" : "TAP_POWER" , "Value"  : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 25, "Type" : "SPECIAL_SKILL" , "Value"  : "1.1" , "Info" : "" , "LongInfo":""},
-                { "Level" : 50, "Type" : "TAP_POWER" , "Value"  : "1.1" , "Info" : "" , "LongInfo":""},
+                { "Level" : 50, "Type" : "MINION_1" , "Value"  : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 100, "Type" : "CLASS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 200, "Type" : "TAP_POWER" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 300, "Type" : "CLASS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
-                { "Level" : 400, "Type" : "SPECIAL_SKILL" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
+                { "Level" : 400, "Type" : "MINION_2" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 500, "Type" : "ALL_CLICKERS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 600, "Type" : "TAP_POWER" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 700, "Type" : "CLASS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 800, "Type" : "CLASS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
-                { "Level" : 900, "Type" : "ALL_CLICKERS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""}
+                { "Level" : 900, "Type" : "MINION_3" , "Value" : "1.1" , "Info" : "" , "LongInfo":""}
             ]
         },{
             "clicker"  : "Evolution",
@@ -496,16 +496,16 @@ var CLICKERS_BOOST_CONFIG =
             [
                 { "Level" : 10, "Type" : "TAP_POWER" , "Value"  : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 25, "Type" : "SPECIAL_SKILL" , "Value"  : "1.1" , "Info" : "" , "LongInfo":""},
-                { "Level" : 50, "Type" : "TAP_POWER" , "Value"  : "1.1" , "Info" : "" , "LongInfo":""},
+                { "Level" : 50, "Type" : "MINION_1" , "Value"  : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 100, "Type" : "CLASS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 200, "Type" : "TAP_POWER" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 300, "Type" : "CLASS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
-                { "Level" : 400, "Type" : "SPECIAL_SKILL" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
+                { "Level" : 400, "Type" : "MINION_2" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 500, "Type" : "ALL_CLICKERS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 600, "Type" : "TAP_POWER" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 700, "Type" : "CLASS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 800, "Type" : "CLASS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
-                { "Level" : 900, "Type" : "ALL_CLICKERS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""}
+                { "Level" : 900, "Type" : "MINION_3" , "Value" : "1.1" , "Info" : "" , "LongInfo":""}
             ]
         },{
             "clicker"  : "Martial",
@@ -513,16 +513,16 @@ var CLICKERS_BOOST_CONFIG =
             [
                 { "Level" : 10, "Type" : "TAP_POWER" , "Value"  : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 25, "Type" : "SPECIAL_SKILL" , "Value"  : "1.1" , "Info" : "" , "LongInfo":""},
-                { "Level" : 50, "Type" : "TAP_POWER" , "Value"  : "1.1" , "Info" : "" , "LongInfo":""},
+                { "Level" : 50, "Type" : "MINION_1" , "Value"  : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 100, "Type" : "CLASS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 200, "Type" : "TAP_POWER" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 300, "Type" : "CLASS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
-                { "Level" : 400, "Type" : "SPECIAL_SKILL" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
+                { "Level" : 400, "Type" : "MINION_2" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 500, "Type" : "ALL_CLICKERS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 600, "Type" : "TAP_POWER" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 700, "Type" : "CLASS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 800, "Type" : "CLASS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
-                { "Level" : 900, "Type" : "ALL_CLICKERS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""}
+                { "Level" : 900, "Type" : "MINION_3" , "Value" : "1.1" , "Info" : "" , "LongInfo":""}
             ]
         },{
             "clicker"  : "IdleofIdles",
@@ -530,16 +530,16 @@ var CLICKERS_BOOST_CONFIG =
             [
                 { "Level" : 10, "Type" : "TAP_POWER" , "Value"  : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 25, "Type" : "SPECIAL_SKILL" , "Value"  : "1.1" , "Info" : "" , "LongInfo":""},
-                { "Level" : 50, "Type" : "TAP_POWER" , "Value"  : "1.1" , "Info" : "" , "LongInfo":""},
+                { "Level" : 50, "Type" : "MINION_1" , "Value"  : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 100, "Type" : "CLASS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 200, "Type" : "TAP_POWER" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 300, "Type" : "CLASS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
-                { "Level" : 400, "Type" : "SPECIAL_SKILL" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
+                { "Level" : 400, "Type" : "MINION_2" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 500, "Type" : "ALL_CLICKERS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 600, "Type" : "TAP_POWER" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 700, "Type" : "CLASS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 800, "Type" : "CLASS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
-                { "Level" : 900, "Type" : "ALL_CLICKERS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""}
+                { "Level" : 900, "Type" : "MINION_3" , "Value" : "1.1" , "Info" : "" , "LongInfo":""}
             ]
         },
     ]
