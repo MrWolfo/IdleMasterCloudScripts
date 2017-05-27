@@ -21,6 +21,7 @@ handlers.SaveInfo = function( args )
            case "TrainingLevel" : return   Save_TrainingLevel(DATA); break;
            case "FragmentMinions" : return   Save_FragmentMinions(DATA); break;
            case "PrestigeManager" : return   Save_PrestigeManager(DATA); break; 
+           case "RewardsManager" : return   Save_RewardsManager(DATA); break; 
            
 
            
@@ -43,6 +44,7 @@ handlers.LoadInfo = function( args )
            case "TrainingLevel" : return  Load_TrainingLevel(); break;
            case "FragmentMinions" : return  Load_FragmentMinions(); break;
            case "PrestigeManager" : return  Load_PrestigeManager(); break;
+           case "RewardsManager" : return  Load_RewardsManager(); break;
            
     }
     
@@ -417,6 +419,81 @@ function Load_PrestigeManager(data)
     ReturnString += Data_PrestigeManager.Prestiges_Qty + "#";
     ReturnString += Data_PrestigeManager.LastTime_Prestiged + "#";
     ReturnString += Data_PrestigeManager.SubLvl_LastPrestige;
+
+    return ReturnString;
+}
+
+
+
+
+
+//////
+//      --------------------------------------- RewardsManager -- INFO  ----------------------------------                        
+//////
+var Data_RewardsManager = 
+{
+    "NatsBuff_Profit_RemainingTime"      : "0",
+    "NatsBuff_Time_RemainingTime"      : "0",
+    "Perk_24hs_x2_RemainTime"      : "0",
+    "Perk_24hs_x4_RemainTime"      : "0",
+    "Perk_24hs_x7_RemainTime"      : "0",
+    "Perk_Hold_TapPower_1hs_Time"      : "0",
+    "Circus_RemainingTime"      : "0",
+    "Circus_Multiplier"      : "0",
+    "LoopyRoads_RemainingTime"      : "0",
+    "LoopyRoads_Multiplier"      : "0",
+    "LoopyRoads_ScoreBest"      : "0",
+    "Flappy_RemainingTime"      : "0",
+    "Flappy_Multiplier"      : "0",
+    "Flappy_ScoreBest"      : "0"
+};
+
+
+
+function Save_RewardsManager(data)
+{
+    var DataObj = Request_SavedGame("RewardsManager",Data_RewardsManager);
+
+    var ExplodedValues  = data.split("#");
+    DataObj.NatsBuff_Profit_RemainingTime        = ExplodedValues[0];
+    DataObj.NatsBuff_Time_RemainingTime   = ExplodedValues[1];
+    DataObj.Perk_24hs_x2_RemainTime  = ExplodedValues[2];
+    DataObj.Perk_24hs_x4_RemainTime  = ExplodedValues[3];
+    DataObj.Perk_24hs_x7_RemainTime  = ExplodedValues[4];
+    DataObj.Perk_Hold_TapPower_1hs_Time  = ExplodedValues[5];
+    DataObj.Circus_RemainingTime  = ExplodedValues[6];
+    DataObj.Circus_Multiplier  = ExplodedValues[7];
+    DataObj.LoopyRoads_RemainingTime  = ExplodedValues[8];
+    DataObj.LoopyRoads_Multiplier  = ExplodedValues[9];
+    DataObj.LoopyRoads_ScoreBest  = ExplodedValues[10];
+    DataObj.Flappy_RemainingTime  = ExplodedValues[11];
+    DataObj.Flappy_Multiplier  = ExplodedValues[12];
+    DataObj.Flappy_ScoreBest   = ExplodedValues[13];
+    
+
+    Save_Data("RewardsManager",DataObj);
+}
+
+function Load_RewardsManager(data)
+{
+    Data_RewardsManager = Request_SavedGame("RewardsManager",Data_RewardsManager);
+
+    var ReturnString ="";
+    ReturnString += Data_RewardsManager.NatsBuff_Profit_RemainingTime + "#";
+    ReturnString += Data_RewardsManager.NatsBuff_Time_RemainingTime + "#";
+    ReturnString += Data_RewardsManager.Perk_24hs_x2_RemainTime + "#";
+    ReturnString += Data_RewardsManager.Perk_24hs_x4_RemainTime + "#";
+    ReturnString += Data_RewardsManager.Perk_24hs_x7_RemainTime + "#";
+    ReturnString += Data_RewardsManager.Perk_Hold_TapPower_1hs_Time + "#";
+    ReturnString += Data_RewardsManager.Circus_RemainingTime + "#";
+    ReturnString += Data_RewardsManager.Circus_Multiplier + "#";
+    ReturnString += Data_RewardsManager.LoopyRoads_RemainingTime + "#";
+    ReturnString += Data_RewardsManager.LoopyRoads_Multiplier + "#";
+    ReturnString += Data_RewardsManager.LoopyRoads_ScoreBest + "#";
+    ReturnString += Data_RewardsManager.Flappy_RemainingTime + "#";
+    ReturnString += Data_RewardsManager.Flappy_Multiplier + "#";
+    ReturnString += Data_RewardsManager.Flappy_ScoreBest;
+    
 
     return ReturnString;
 }
