@@ -36,7 +36,7 @@ var CLICKERS_CONFIG =
         "Name": "FantasyClickTap",
         "Avatar": "Fantasy",
         "Class": TYPE_HARDCORE,
-        "BaseCost": "2.70E+04",
+        "BaseCost": "1.60E+04",
         "Speed": "1.2",
         "Color": "5E52A2",
         "Info": "Magic, Dragons, Swords and Dungeons without Limit.",
@@ -48,7 +48,7 @@ var CLICKERS_CONFIG =
         "Name": "CaffeineClicker",
         "Avatar": "Caffeine",
         "Class": TYPE_CASUAL,
-        "BaseCost": "8.70E+04",
+        "BaseCost": "4.70E+04",
         "Speed": "1.2",
         "Color": "00B6E1",
         "Info": "Sleep if for the weaks",
@@ -239,8 +239,8 @@ var CLICKERS_BOOST_CONFIG =
             "boosts"   : 
             [
                 { "Level" : 10, "Type" : "TAP_POWER" , "Value"  : "1.1" , "Info" : "" , "LongInfo":""},
-                { "Level" : 25, "Type" : "SPECIAL_SKILL" , "Value"  : "1.1" , "Info" : "" , "LongInfo":""},
-                { "Level" : 50, "Type" : "MINION_1" , "Value"  : "1.1" , "Info" : "" , "LongInfo":""},
+                { "Level" : 25, "Type" : "MINION_1" , "Value"  : "1.1" , "Info" : "" , "LongInfo":""},
+                { "Level" : 50, "Type" : "SPECIAL_SKILL" , "Value"  : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 100, "Type" : "CLASS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 200, "Type" : "TAP_POWER" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 300, "Type" : "CLASS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
@@ -257,8 +257,8 @@ var CLICKERS_BOOST_CONFIG =
             "boosts"   : 
             [
                 { "Level" : 10, "Type" : "TAP_POWER" , "Value"  : "1.1" , "Info" : "" , "LongInfo":""},
-                { "Level" : 25, "Type" : "SPECIAL_SKILL" , "Value"  : "1.1" , "Info" : "" , "LongInfo":""},
-                { "Level" : 50, "Type" : "MINION_1" , "Value"  : "1.1" , "Info" : "" , "LongInfo":""},
+                { "Level" : 25, "Type" : "MINION_1" , "Value"  : "1.1" , "Info" : "" , "LongInfo":""},
+                { "Level" : 50, "Type" : "SPECIAL_SKILL" , "Value"  : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 100, "Type" : "CLASS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 200, "Type" : "TAP_POWER" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
                 { "Level" : 300, "Type" : "CLASS_PROFITS" , "Value" : "1.1" , "Info" : "" , "LongInfo":""},
