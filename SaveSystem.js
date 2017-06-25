@@ -221,7 +221,7 @@ function Save_Clickers(data)
         {
              "Level"        : Clicker_Level,
              "Boosts"       : Clicker_BoostsDone,
-             "IsAscended"   : Clicker_IsAscended,
+             "QtyAscensions"   : Clicker_IsAscended,
              "SkillLevel"   : Clicker_SkillLevel,
              "MinionsLevel" : Clicker_MinionsLevel,
              "Multipliers"  : Clicker_Multipliers,
@@ -248,7 +248,7 @@ function Load_Clickers(data)
         formattedString += aKey + "&";
         formattedString += clicker.Level + "&";
         formattedString += clicker.Boosts + "&";
-        formattedString += clicker.IsAscended + "&";
+        formattedString += clicker.QtyAscensions + "&";
         formattedString += clicker.SkillLevel + "&";
         formattedString += clicker.MinionsLevel + "&";
         formattedString += clicker.Multipliers + "&";
