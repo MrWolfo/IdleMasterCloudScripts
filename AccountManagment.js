@@ -313,7 +313,8 @@ handlers.ResetPlayerData = function (args)
                     "TapManager"    : null,
                     "TrainingLevel" :  null,
                     "DailyReward" :  null,
-                    "RewardsManager" :  null
+                    "RewardsManager" :  null,
+                    "TeamsData" : null
              } 
             });
 
@@ -330,7 +331,8 @@ handlers.ResetPlayerData = function (args)
                     "TapManager"    : null,
                     "TrainingLevel" :  null,
                     "DailyReward" :  null,
-                    "RewardsManager" :  null
+                    "RewardsManager" :  null,
+                    "TeamsData" : null
              } 
             });
 }
