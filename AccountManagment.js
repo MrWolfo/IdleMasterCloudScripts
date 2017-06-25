@@ -300,6 +300,7 @@ handlers.ReLoggedEvent = function (args)
 
 handlers.ResetPlayerData = function (args)
 {
+    /*
     var updateUserDataResult = server.UpdateUserData(
             {
                 PlayFabId : currentPlayerId,
@@ -316,11 +317,12 @@ handlers.ResetPlayerData = function (args)
                     "RewardsManager" :  null
              } 
             });
-
+     */
      var updateUserInternalDataResult = server.UpdateUserInternalData(
             {
                 PlayFabId : currentPlayerId,
                 Data : {
+                    "TeamsData" : null ,
                     "Clickers" :  null,
                     "FragmentMinions" :  null,
                     "GameLogic" :  null,
@@ -330,8 +332,8 @@ handlers.ResetPlayerData = function (args)
                     "TapManager"    : null,
                     "TrainingLevel" :  null,
                     "DailyReward" :  null,
-                    "RewardsManager" :  null,
-                    "TeamsData":null
+                    "RewardsManager" :  null
+                    
              } 
             });
 }
