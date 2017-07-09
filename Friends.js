@@ -1,7 +1,7 @@
 
 
 /**
- *   LOAD FRIEND LIST WITH ADDITIONAL DATA LIKE SKIN AND NAME (and others) HACE COSAS
+ *   LOAD FRIEND LIST WITH ADDITIONAL DATA LIKE SKIN AND NAME (and others) 
  */
 
 handlers.GetFriendData = function (args)

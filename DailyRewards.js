@@ -1,5 +1,5 @@
 
-//-- Daily Rewards Title Data Format
+//-- Daily Rewards Title Data Format d
 var DailyRewards_TitleData = 
 {
     "DayCounter" : 0,     

@@ -50,13 +50,39 @@ handlers.LoadInfo = function( args )
     
 }
 
+function  IsSavedInternal(SaveName)
+{
+    var NotInternals = ["PlayerData","GameLogic"];
+
+    return  NotInternals.lastIndexOf(SaveName) == -1;
+
+}
+
 function Request_SavedGame(SaveName, DefaultObject)
 {
-    var dataRequest = server.GetUserInternalData
+    var dataRequest;
+
+    if(IsSavedInternal(SaveName))
+    {
+        dataRequest = server.GetUserInternalData
                       ({
                             PlayFabId : currentPlayerId, 
                             Keys : [SaveName]
-                      });
+                      }); 
+    }
+    else
+    {
+        dataRequest = server.GetUserData
+                      ({
+                            PlayFabId : currentPlayerId, 
+                            Keys : [SaveName]
+                      }); 
+
+    }
+
+    
+
+
 
     //--- If Saved Data, overwritte it
     if(dataRequest.Data.hasOwnProperty(SaveName))
@@ -75,12 +101,26 @@ function Save_Data(SaveName,dataInfo)
     var SaveData = {};
     SaveData[SaveName] = JSON.stringify( dataInfo);
 
-    var save = server.UpdateUserInternalData(
+    if(IsSavedInternal(SaveName))
+    {
+        var save = server.UpdateUserInternalData(
             {
                     PlayFabId : currentPlayerId,
                     Data : SaveData 
             } 
         );
+    }
+    else
+    {
+        var save = server.UpdateUserData(
+            {
+                    PlayFabId : currentPlayerId,
+                    Data : SaveData 
+            } 
+        );
+    }
+
+    
 }
 
 
