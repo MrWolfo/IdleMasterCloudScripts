@@ -334,9 +334,7 @@ handlers.GetDataForKey = function (args)
         "Clickers_StatsData" : JSON.stringify( CLICKERS_STATS )
     };
 
-    var serverData = DATA_BY_KEY;
-
-    return serverData;
+    var serverData = DATA_BY_KEY[requestDataKey];
 
     var serverDataHash = MD5(serverData);
     
