@@ -339,7 +339,7 @@ handlers.GetDataForKey = function (args)
 
     var serverDataHash = MD5(serverData);
     
-    return (serverDataHash === requestDataHash) ? "OK" : serverData;
+    return (serverDataHash == requestDataHash) ? "OK" : serverData;
 }
 
 
