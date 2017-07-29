@@ -320,17 +320,22 @@ var CLICKERS_BOOST_CONFIG =
 };
 
 
+var DATA_BY_KEY = 
+{
+    "Clickers_InfoData"  : CLICKERS_INFO,
+    "Clickers_StatsData" : CLICKERS_STATS
+};
+
 handlers.GetDataForKey = function (args)
 {
-    var dataKey  = args.DataKey;
-    var dataHash = args.DataHash;
+    var requestDataKey  = args.DataKey;
+    var requestDataHash = args.DataHash;
 
+    var serverData = DATA_BY_KEY[requestDataKey];
 
-    //var returnData = JSON.stringify( CLICKERS_CONFIG);
-
-    var returnData = MD5("zarpadoengato");
-
-    return returnData;
+    var serverDataHash = MD5(serverData);
+    
+    return (serverDataHash === requestDataHash) ? "OK" : serverData;
 }
 
 
