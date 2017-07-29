@@ -328,6 +328,8 @@ var DATA_BY_KEY =
 
 handlers.GetDataForKey = function (args)
 {
+    return args;
+
     var requestDataKey  = args.DataKey;
     var requestDataHash = args.DataHash;
 
