@@ -328,7 +328,7 @@ handlers.GetDataForKey = function (args)
 
     //var returnData = JSON.stringify( CLICKERS_CONFIG);
 
-    var returnData = "zarpadoengato";
+    var returnData = md5("zarpadoengato");
 
     return returnData;
 }
