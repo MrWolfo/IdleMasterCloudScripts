@@ -330,7 +330,7 @@ handlers.GetDataForKey = function (args)
 
     var DATA_BY_KEY = 
     {
-        "Clickers_InfoData"   : JSON.stringify( CLICKERS_INFO ),
+        "Clickers_InfoData"   : JSON.stringify( JSON.parse( JSON.stringify( CLICKERS_INFO ) ) ),
         "Clickers_StatsData"  : JSON.stringify( CLICKERS_STATS ),
         "Clickers_BoostData" : JSON.stringify( CLICKERS_BOOST_CONFIG )
     };
