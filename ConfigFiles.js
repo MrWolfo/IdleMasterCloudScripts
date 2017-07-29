@@ -341,7 +341,7 @@ handlers.GetDataForKey = function (args)
 
     var serverDataHash = MD5(serverData);
 
-    console.log(requestDataHash);
+    //console.log(requestDataHash);
     console.log(serverDataHash);
     
     return (serverDataHash == requestDataHash) ? "OK" : serverData;
