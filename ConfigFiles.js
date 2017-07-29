@@ -322,8 +322,8 @@ var CLICKERS_BOOST_CONFIG =
 
 var DATA_BY_KEY = 
 {
-    "Clickers_InfoData"  : CLICKERS_INFO,
-    "Clickers_StatsData" : CLICKERS_STATS
+    "Clickers_InfoData"  : 2,
+    "Clickers_StatsData" : 4
 };
 
 handlers.GetDataForKey = function (args)
