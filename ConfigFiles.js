@@ -332,7 +332,7 @@ handlers.GetDataForKey = function (args)
     var requestDataKey  = args.DataKey;
     var requestDataHash = args.DataHash;
 
-    var serverData = DATA_BY_KEY;
+    var serverData = CLICKERS_STATS;
 
     return serverData;
 
