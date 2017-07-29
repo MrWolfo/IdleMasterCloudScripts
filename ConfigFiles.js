@@ -320,11 +320,7 @@ var CLICKERS_BOOST_CONFIG =
 };
 
 
-var DATA_BY_KEY = 
-{
-    "Clickers_InfoData"  : JSON.stringify( CLICKERS_INFO ),
-    "Clickers_StatsData" : JSON.stringify( CLICKERS_STATS )
-};
+
 
 handlers.GetDataForKey = function (args)
 {
@@ -332,7 +328,13 @@ handlers.GetDataForKey = function (args)
     var requestDataKey  = args.DataKey;
     var requestDataHash = args.DataHash;
 
-    var serverData = CLICKERS_STATS;
+    var DATA_BY_KEY = 
+    {
+        "Clickers_InfoData"  : JSON.stringify( CLICKERS_INFO ),
+        "Clickers_StatsData" : JSON.stringify( CLICKERS_STATS )
+    };
+
+    var serverData = DATA_BY_KEY;
 
     return serverData;
 
