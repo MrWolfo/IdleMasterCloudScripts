@@ -326,7 +326,7 @@ handlers.GetDataForKey = function (args)
 {
 
     var requestDataKey  = args.DataKey;
-    var requestDataHash = args.DataHash;
+    var requestDataHash = args.DataHash.trim();
 
     var DATA_BY_KEY = 
     {
@@ -339,7 +339,7 @@ handlers.GetDataForKey = function (args)
 
     
 
-    var serverDataHash = MD5(serverData);
+    var serverDataHash = MD5(serverData).trim();
 
     return { unity: args.DataHash , server: serverDataHash };
 
