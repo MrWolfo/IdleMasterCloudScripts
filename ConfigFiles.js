@@ -345,6 +345,8 @@ handlers.GetDataForKey = function (args)
     */
     ////return { unity: args.DataHash , server: serverDataHash };
 
+    var serverDataHash = "lala";
+
     return (serverDataHash == requestDataHash) ? "OK" : serverData;
 }
 
