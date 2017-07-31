@@ -81,7 +81,7 @@ var CLICKERS_INFO =
         "Color": "CD2026",
         "Info": "Exponentially think about Exponential Problem",
         "SkillName": "Do the Maths",
-        "SkillInfo": "All the Clickers gain +5% speed for each Boost this clicker has done (max of 100%)"
+        "SkillInfo": "All the Clickers gain x1.05 speed for each Boost this clicker has done (max of x2)"
         },
         {
         "Name": "Sport Champions",
@@ -95,7 +95,7 @@ var CLICKERS_INFO =
         "Name": "Social Incremental",
         "IdName": "Social",
         "Color": "CD2026",
-        "Info": "A Social Network without limits of Friends. ",
+        "Info": "A Social Network without limit on Friends ammount. ",
         "SkillName": "NONE",
         "SkillInfo": "No Skill Yet"
         },
