@@ -336,13 +336,13 @@ handlers.GetDataForKey = function (args)
     };
 
     var serverData = DATA_BY_KEY[requestDataKey];
-    
+    /*
     md5( serverData );
     var hash = md5.create();
     hash.update(serverData);
     
     var serverDataHash = hash.hex();
-
+    */
     ////return { unity: args.DataHash , server: serverDataHash };
 
     return (serverDataHash == requestDataHash) ? "OK" : serverData;
