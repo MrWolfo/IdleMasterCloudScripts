@@ -47,7 +47,7 @@ handlers.LoadInfo = function( args )
            case "RewardsManager" : return  Load_RewardsManager(); break;
            
     }
-    
+    return "NO_DATA_FOUND_AND_SAVED";
 }
 
 function  IsSavedInternal(SaveName)
