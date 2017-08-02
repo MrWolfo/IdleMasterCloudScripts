@@ -324,9 +324,9 @@ var CLICKERS_BOOST_CONFIG =
 
 handlers.GetDataForKey = function (args)
 {
-/*
+
     var requestDataKey  = args.DataKey;
-    var requestDataHash = args.DataHash.trim();
+    var requestDataHash = args.DataHash;
 
     var DATA_BY_KEY = 
     {
@@ -335,9 +335,7 @@ handlers.GetDataForKey = function (args)
         "Clickers_BoostData"  : JSON.stringify( CLICKERS_BOOST_CONFIG )
     };
 
-    var serverData = DATA_BY_KEY[requestDataKey];*/
-   
-    var serverData = "lelele";
+    var serverData = DATA_BY_KEY[requestDataKey];
     var serverDataHash = "ldldldlddl" ; //MD5(serverData);
     
     return (serverDataHash == requestDataHash) ? "OK" : serverData;
