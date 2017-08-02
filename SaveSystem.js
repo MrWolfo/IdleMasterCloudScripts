@@ -34,6 +34,8 @@ handlers.LoadInfo = function( args )
 {
     var SAVE_NAME = args["SaveName"];
 
+    return "NO_DATA_FOUND_AND_SAVED";
+
     switch(SAVE_NAME)
     {
            case "GameLogic" : return  Load_GameLogic(); break;
@@ -47,7 +49,7 @@ handlers.LoadInfo = function( args )
            case "RewardsManager" : return  Load_RewardsManager(); break;
            
     }
-    return "NO_DATA_FOUND_AND_SAVED";
+    
 }
 
 function  IsSavedInternal(SaveName)
