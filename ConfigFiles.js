@@ -336,15 +336,9 @@ handlers.GetDataForKey = function (args)
     };
 
     var serverData = DATA_BY_KEY[requestDataKey];
-    
    
-    
     var serverDataHash =MD5(serverData);
     
-    ////return { unity: args.DataHash , server: serverDataHash };
-
-    var serverDataHash = "lala";
-
     return (serverDataHash == requestDataHash) ? "OK" : serverData;
 }
 
