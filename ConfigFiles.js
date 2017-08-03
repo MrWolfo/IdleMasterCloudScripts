@@ -336,7 +336,7 @@ handlers.GetDataForKey = function (args)
     };
 
     var serverData = DATA_BY_KEY[requestDataKey];
-    var serverDataHash = MD5(serverData);
+    var serverDataHash = GetHashByHand(serverData);
     
     return (serverDataHash == requestDataHash) ? "OK" : serverData;
 }
