@@ -40,7 +40,7 @@ var CLICKERS_STATS =
         {
         "IdName": "Heroes",
         "Class": TYPE_MIXED,
-        "BaseCost": "1.30E+06",
+        "BaseCost": "1.31E+06",
         "Speed": "1.5"
         },
         {
