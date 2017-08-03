@@ -4,6 +4,7 @@ var TYPE_MIXED    = 3;
 
 var CLICKERS_BOOST_CONFIG = 	
 {
+    "randomId" : "OPERTUZO",
     "version" : 0,
     "clickers" :
     [
