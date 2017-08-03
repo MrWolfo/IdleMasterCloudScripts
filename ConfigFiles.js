@@ -34,7 +34,7 @@ function Get_CSVFile_FromWeb()
     var url = "https://www.dropbox.com/s/zkyna8i5c15cl8q/Minions_Data.csv?dl=1";
     var method = "post";
     var contentBody = "";
-    var contentType = "application/json";
+    var contentType = "text/csv";
     var headers = {};
     var responseString =  http.request(url,method,contentBody,contentType,headers); 
 
