@@ -4,7 +4,7 @@
 
 var CLICKERS_STATS = 	
 {
-    "randomId" : "OPERTUZO",
+    "randomId" : "OPERTUZOdemaciano",
     "version" : 0,
     "clickers" :
     [
