@@ -32,7 +32,7 @@ handlers.GetDataForKey = function (args)
 function Get_CSVFile_FromWeb()
 {
     var url = "https://www.dropbox.com/s/zkyna8i5c15cl8q/Minions_Data.csv?dl=1";
-    var method = "post";
+    var method = "get";
     var contentBody = "";
     var contentType = "text/plain";
     var headers = {};
