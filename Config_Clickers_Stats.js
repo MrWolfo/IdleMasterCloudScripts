@@ -28,7 +28,7 @@ var CLICKERS_STATS =
         {
         "IdName": "Caffeine",
         "Class": TYPE_CASUAL,
-        "BaseCost": "4.70E+04",
+        "BaseCost": "4.75E+04",
         "Speed": "1.5"
         },
         {
@@ -46,7 +46,7 @@ var CLICKERS_STATS =
         {
         "IdName": "Racing",
         "Class": TYPE_CASUAL,
-        "BaseCost": "1.30E+08",
+        "BaseCost": "1.32E+08",
         "Speed": "1.5"
         },
         {
