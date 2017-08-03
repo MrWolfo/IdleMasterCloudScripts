@@ -10,7 +10,7 @@ function GetHashByHand(originalSt)
 {
 
   var returnHash = "";
-  var OriginalLenght = Original.length;
+  var OriginalLenght = originalSt.length;
 
   var Summatory = 0;
 
