@@ -15,7 +15,7 @@ handlers.GetDataForKey = function (args)
     {
         "Clickers_InfoData"   : JSON.stringify( CLICKERS_INFO ) ,
         "Clickers_StatsData"  : JSON.stringify( CLICKERS_STATS ) ,
-        "Clickers_BoostData"  : JSON.stringify( CLICKERS_BOOST_CONFIG )
+        "Clickers_BoostData"  : JSON.stringify( CLICKERS_BOOST_CONFIG )        
     };
 
     var serverData = DATA_BY_KEY[requestDataKey];
