@@ -11,27 +11,26 @@ handlers.GetDataForKey = function (args)
     var requestDataKey  = args.DataKey;
     var requestDataHash = args.DataHash;
 
-    var DATA_BY_KEY = 
-    {
-        "Clickers_InfoData"   : JSON.stringify( CLICKERS_INFO ) ,
-        "Clickers_StatsData"  : JSON.stringify( CLICKERS_STATS ) ,
-        "Clickers_BoostData"  : JSON.stringify( CLICKERS_BOOST_CONFIG )        
-    };
-
-    var serverData = DATA_BY_KEY[requestDataKey];
-    var serverDataHash = GetHashByHand(serverData);
-
-
-    return Get_CSVFile_FromWeb();
-
     
-    return (serverDataHash == requestDataHash) ? "OK" : serverData;
+    var csvData = Get_CSVFile_FromWeb(requestDataKey);
+    var serverDataHash = GetHashByHand(csvData);
+
+    return (serverDataHash == requestDataHash) ? "OK" : csvData;
 }
 
 
-function Get_CSVFile_FromWeb()
+function Get_CSVFile_FromWeb(Key)
 {
-    var url = "https://www.dropbox.com/s/zkyna8i5c15cl8q/Minions_Data.csv?dl=1";
+    var DATA_CSV_URLS = 
+    {
+        "Clickers_Boosts_Info"   : "1y5u0ye8cmcms5j" ,
+        "Clickers_Boosts_Stats"  : "dp45vpgcic5q7b4" ,
+        "Clickers_Data_Info"     : "teiqokglbh46vo4" ,
+        "Clickers_Data_Stats"    : "vtdpk43ab5xiog9" ,
+        "Clickers_Minions_Info"  : "gztv6oa52dy4zps"
+    };
+
+    var url = "https://www.dropbox.com/s/" + DATA_CSV_URLS[Key] + "/" + Key + ".csv?dl=1";
     var method = "get";
     var contentBody = "";
     var contentType = "text/plain";
