@@ -25,8 +25,8 @@ function Get_CSVFile_FromWeb(Key)
     {
         "Clickers_Boosts_Info"   : "1y5u0ye8cmcms5j" ,
         "Clickers_Boosts_Stats"  : "dp45vpgcic5q7b4" ,
-        "Clickers_Data_Info"     : "teiqokglbh46vo4" ,
-        "Clickers_Data_Stats"    : "vtdpk43ab5xiog9" ,
+        "Clickers_Data_Info"     : "o6xjuiovkjubcwe" ,
+        "Clickers_Data_Stats"    : "aqex7z1pnykcw7x" ,
         "Clickers_Minions_Info"  : "gztv6oa52dy4zps"
     };
 
